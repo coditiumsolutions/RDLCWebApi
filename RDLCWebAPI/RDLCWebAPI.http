@@ -1,0 +1,6 @@
+@RDLCWebAPI_HostAddress = http://localhost:5299
+
+GET {{RDLCWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

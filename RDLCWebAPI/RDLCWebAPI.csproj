@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.24" />
+    <PackageReference Include="ReportViewerCore.NETCore" Version="15.1.33" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Drawing.Common" Version="10.0.3" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Reports\BillDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>BillDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Reports\BillDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BillDataSet.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
