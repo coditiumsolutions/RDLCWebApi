@@ -1208,7 +1208,6 @@
                                               <PaddingBottom>2pt</PaddingBottom>
                                             </Style>
                                           </Textbox>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                     </TablixCells>
@@ -2692,10 +2691,10 @@
                                     <Width>1.40604in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.41992in</Width>
+                                    <Width>1.56201in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.93382in</Width>
+                                    <Width>1.79174in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>1.10263in</Width>
@@ -2832,6 +2831,7 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>6</ColSpan>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
