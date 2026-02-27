@@ -1,4 +1,4 @@
-using RDLCWebAPI.Repositories;
+﻿using RDLCWebAPI.Repositories;
 using RDLCWebAPI.Services;
 using System.Text;
 
@@ -8,6 +8,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// ✅ ADD CORS - Allow All
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
 
 // Register repositories
 builder.Services.AddScoped<IMaintenanceBillRepository, MaintenanceBillRepository>();
@@ -28,7 +40,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+// ✅ USE CORS (IMPORTANT - before MapControllers)
+app.UseCors("AllowAll");
+
 app.UseAuthorization();
+
 app.MapControllers();
 
 // Ensure Reports folder exists
