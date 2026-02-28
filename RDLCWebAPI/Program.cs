@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// ✅ ADD CORS - Allow All
+// ✅ Enable CORS (Allow All)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
@@ -27,21 +27,31 @@ builder.Services.AddScoped<IMaintenanceBillRepository, MaintenanceBillRepository
 // Register services
 builder.Services.AddScoped<IMaintenanceReportService, MaintenanceReportService>();
 
-// Register encoding
+// Register encoding for RDLC
 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
 var app = builder.Build();
 
-// Configure pipeline
-if (app.Environment.IsDevelopment())
+// ✅ Enable Swagger in ALL environments (Development + Production)
+app.UseSwagger();
+
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "RDLC Web API V1");
+    options.RoutePrefix = "swagger";
+    // swagger/index.html
+});
+
+// Optional: redirect root to swagger
+app.MapGet("/", context =>
+{
+    context.Response.Redirect("/swagger");
+    return Task.CompletedTask;
+});
 
 app.UseHttpsRedirection();
 
-// ✅ USE CORS (IMPORTANT - before MapControllers)
+// ✅ Enable CORS
 app.UseCors("AllowAll");
 
 app.UseAuthorization();
@@ -50,6 +60,7 @@ app.MapControllers();
 
 // Ensure Reports folder exists
 var reportsPath = Path.Combine(app.Environment.ContentRootPath, "Reports");
+
 if (!Directory.Exists(reportsPath))
 {
     Directory.CreateDirectory(reportsPath);
