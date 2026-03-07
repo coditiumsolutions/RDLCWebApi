@@ -12,7 +12,14 @@ namespace RDLCWebAPI.Services
         private readonly IMaintenanceBillRepository _billRepository;
         private readonly IWebHostEnvironment _environment;
 
-        private readonly string _reportFileName = "Safari - 1.rdlc";
+        // Dictionary to map report types to file names
+        private readonly Dictionary<string, string> _reportFiles = new Dictionary<string, string>
+        {
+            { "Safari-1", "Safari - 1.rdlc" },
+            { "Safari-2", "Safari - 2.rdlc" },
+            { "Safari-3", "Safari - 3.rdlc" },
+            { "SafariHeights", "Safari Heights.rdlc" }
+        };
 
         public MaintenanceReportService(
             IMaintenanceBillRepository billRepository,
@@ -24,13 +31,26 @@ namespace RDLCWebAPI.Services
         }
 
         public async Task<byte[]> GenerateReportAsync(
-            string project, string phaseNumber, string billingMonth, string billingYear)
+            string reportType,
+            string project,
+            string phaseNumber,
+            string billingMonth,
+            string billingYear)
         {
             try
             {
+                // Validate report type
+                if (!_reportFiles.ContainsKey(reportType))
+                {
+                    throw new ArgumentException($"Invalid report type: {reportType}. Valid types: {string.Join(", ", _reportFiles.Keys)}");
+                }
+
+                string reportFileName = _reportFiles[reportType];
+
                 Console.WriteLine("========== MAINTENANCE REPORT DEBUG ==========");
+                Console.WriteLine($"Report Type: {reportType}");
+                Console.WriteLine($"Report File: {reportFileName}");
                 Console.WriteLine($"Parameters: Project={project}, PhaseNumber={phaseNumber}, Month={billingMonth}, Year={billingYear}");
-                Console.WriteLine($"Using Report File: {_reportFileName}");
 
                 // 1. Get data
                 var bills = await _billRepository.GetMaintenanceBillsAsync(
@@ -51,7 +71,7 @@ namespace RDLCWebAPI.Services
                 Console.WriteLine($"DataTable created: {dt.Columns.Count} columns, {dt.Rows.Count} rows");
 
                 // 3. Find report file
-                string reportPath = FindReportFile();
+                string reportPath = FindReportFile(reportFileName);
                 Console.WriteLine($"Report path: {reportPath}");
 
                 // 4. Load report
@@ -63,11 +83,11 @@ namespace RDLCWebAPI.Services
                 // 5. Add data source
                 report.DataSources.Add(new ReportDataSource("DataSet1", dt));
 
-                // 6. Set parameters (updated parameter name)
+                // 6. Set parameters
                 var parameters = new[]
                 {
                     new ReportParameter("Project", project ?? ""),
-                    new ReportParameter("PhaseNumber", phaseNumber ?? ""),    // Renamed
+                    new ReportParameter("PhaseNumber", phaseNumber ?? ""),
                     new ReportParameter("BillingMonth", billingMonth ?? ""),
                     new ReportParameter("BillingYear", billingYear ?? "")
                 };
@@ -77,27 +97,27 @@ namespace RDLCWebAPI.Services
 
                 // 7. Render PDF
                 var renderedBytes = report.Render("PDF");
-                Console.WriteLine($"✅ Report generated: {renderedBytes.Length} bytes");
+                Console.WriteLine($"✅ Report generated: {renderedBytes.Length} bytes for {reportType}");
                 return renderedBytes;
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ ERROR: {ex.Message}");
+                Console.WriteLine($"❌ ERROR in {reportType}: {ex.Message}");
                 if (ex.InnerException != null)
                 {
                     Console.WriteLine($"INNER: {ex.InnerException.Message}");
                 }
-                throw new Exception($"Report generation failed: {ex.Message}", ex);
+                throw new Exception($"Report generation failed for {reportType}: {ex.Message}", ex);
             }
         }
 
-        private string FindReportFile()
+        private string FindReportFile(string reportFileName)
         {
             string[] paths = new[]
             {
-                Path.Combine(_environment.ContentRootPath, "Reports", _reportFileName),
-                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reports", _reportFileName),
-                Path.Combine(Directory.GetCurrentDirectory(), "Reports", _reportFileName),
+                Path.Combine(_environment.ContentRootPath, "Reports", reportFileName),
+                Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Reports", reportFileName),
+                Path.Combine(Directory.GetCurrentDirectory(), "Reports", reportFileName),
             };
 
             foreach (var path in paths)
@@ -109,7 +129,7 @@ namespace RDLCWebAPI.Services
                 }
             }
 
-            throw new FileNotFoundException($"Report file '{_reportFileName}' not found in Reports folder.");
+            throw new FileNotFoundException($"Report file '{reportFileName}' not found in Reports folder. Checked paths: {string.Join(", ", paths)}");
         }
 
         private DataTable CreateDataTable(List<MaintenanceBillData> bills)
