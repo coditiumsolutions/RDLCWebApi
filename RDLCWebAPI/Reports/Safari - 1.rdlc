@@ -7,7 +7,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>cc4f797d-bd2b-4f2d-b8ba-af62833254da</rd:DataSourceID>
+      <rd:DataSourceID>12b46a75-1cd9-4058-85c5-5480d9576a3d</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -21,8 +21,8 @@
           <DataField>CM_uid</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="CM_CustomerNo">
-          <DataField>CM_CustomerNo</DataField>
+        <Field Name="CM_KuickPayNo">
+          <DataField>CM_KuickPayNo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CM_CustomerName">
@@ -31,10 +31,6 @@
         </Field>
         <Field Name="CM_BTNo">
           <DataField>CM_BTNo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CM_MeterNo">
-          <DataField>CM_MeterNo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CM_History">
@@ -57,24 +53,8 @@
           <DataField>FatherName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="InstalledOn">
-          <DataField>InstalledOn</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="MobileNo">
           <DataField>MobileNo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="TelephoneNo">
-          <DataField>TelephoneNo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MeterType">
-          <DataField>MeterType</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="NTNNumber">
-          <DataField>NTNNumber</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="City">
@@ -85,32 +65,12 @@
           <DataField>Project</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="SubProject">
-          <DataField>SubProject</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="TariffName">
-          <DataField>TariffName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BankNo">
-          <DataField>BankNo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BTNoMaintenance">
-          <DataField>BTNoMaintenance</DataField>
+        <Field Name="PhaseNumber">
+          <DataField>PhaseNumber</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Category">
           <DataField>Category</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Block">
-          <DataField>Block</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PlotType">
-          <DataField>PlotType</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Size">
@@ -125,14 +85,6 @@
           <DataField>PloNo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="BillStatusMaint">
-          <DataField>BillStatusMaint</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BillStatus">
-          <DataField>BillStatus</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="BillGenerationStatus">
           <DataField>BillGenerationStatus</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -141,12 +93,24 @@
           <DataField>ConnectionStatus</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="CM_PlotStatus">
+          <DataField>CM_PlotStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StreetNumber">
+          <DataField>StreetNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UnitType">
+          <DataField>UnitType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="MB_uid">
           <DataField>MB_uid</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="MB_CustomerNo">
-          <DataField>MB_CustomerNo</DataField>
+        <Field Name="MB_KuickPayNo">
+          <DataField>MB_KuickPayNo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="MB_CustomerName">
@@ -157,20 +121,32 @@
           <DataField>MB_BTNo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="MB_MeterNo">
-          <DataField>MB_MeterNo</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="MB_History">
           <DataField>MB_History</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="InvoiceNo">
-          <DataField>InvoiceNo</DataField>
+        <Field Name="Plot_Number">
+          <DataField>Plot_Number</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PlotStatus">
-          <DataField>PlotStatus</DataField>
+        <Field Name="Street_Number">
+          <DataField>Street_Number</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Phase_Number">
+          <DataField>Phase_Number</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Plot_Category">
+          <DataField>Plot_Category</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PROJECTNAME">
+          <DataField>PROJECTNAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MB_PlotStatus">
+          <DataField>MB_PlotStatus</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="BillingMonth">
@@ -181,20 +157,12 @@
           <DataField>BillingYear</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="BillingDate">
-          <DataField>BillingDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
         <Field Name="DueDate">
           <DataField>DueDate</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="IssueDate">
           <DataField>IssueDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="ValidDate">
-          <DataField>ValidDate</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="PaymentStatus">
@@ -213,12 +181,52 @@
           <DataField>BankDetail</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="LastUpdated">
-          <DataField>LastUpdated</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+        <Field Name="PAIDBYOPERATOR">
+          <DataField>PAIDBYOPERATOR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AMOUNTPAID">
+          <DataField>AMOUNTPAID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="MaintCharges">
           <DataField>MaintCharges</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WaterCharges">
+          <DataField>WaterCharges</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OtherCharges">
+          <DataField>OtherCharges</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MiscCharges">
+          <DataField>MiscCharges</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="installamount">
+          <DataField>installamount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="current_gst">
+          <DataField>current_gst</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Arrears">
+          <DataField>Arrears</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PreviousArrears">
+          <DataField>PreviousArrears</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="advance_payment">
+          <DataField>advance_payment</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AdvanceAmount">
+          <DataField>AdvanceAmount</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="BillAmountInDueDate">
@@ -233,32 +241,52 @@
           <DataField>BillAmountAfterDueDate</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="Arrears">
-          <DataField>Arrears</DataField>
+        <Field Name="GTotal">
+          <DataField>GTotal</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="TaxAmount">
-          <DataField>TaxAmount</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Fine">
-          <DataField>Fine</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="OtherCharges">
-          <DataField>OtherCharges</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="WaterCharges">
-          <DataField>WaterCharges</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="FineDept">
-          <DataField>FineDept</DataField>
+        <Field Name="compute">
+          <DataField>compute</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="MiscCharges">
-          <DataField>MiscCharges</DataField>
+        <Field Name="conndate">
+          <DataField>conndate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="UpdateBy">
+          <DataField>UpdateBy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UpdateOn">
+          <DataField>UpdateOn</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="PushedBy">
+          <DataField>PushedBy</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PushedOn">
+          <DataField>PushedOn</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RentAmount">
+          <DataField>RentAmount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FoodSafety">
+          <DataField>FoodSafety</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TrollyTrip">
+          <DataField>TrollyTrip</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ExtraWork">
+          <DataField>ExtraWork</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DieselCost">
+          <DataField>DieselCost</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
@@ -322,7 +350,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>BAHRIA SAFARI PROJECT - MAINTENANCE BILL</Value>
+                                                    <Value>SAFARI VILLAS 1 PROJECT MAINTENANCE BILL</Value>
                                                     <Style>
                                                       <FontSize>14pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
@@ -641,13 +669,13 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="Textbox13">
+                                          <Textbox Name="conndate">
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Constant" />
                                                     <Style>
                                                       <FontSize>9pt</FontSize>
                                                     </Style>
@@ -658,7 +686,7 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox13</rd:DefaultName>
+                                            <rd:DefaultName>conndate</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>Solid</Style>
@@ -798,7 +826,7 @@
                               <DataSetName>DataSet1</DataSetName>
                               <Left>0.00125in</Left>
                               <Height>0.94792in</Height>
-                              <Width>7.26875in</Width>
+                              <Width>7.26873in</Width>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -976,13 +1004,13 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="Textbox46">
+                                          <Textbox Name="CM_KuickPayNo">
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>010403110001001</Value>
+                                                    <Value>=Fields!CM_KuickPayNo.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontWeight>Bold</FontWeight>
@@ -996,7 +1024,7 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox46</rd:DefaultName>
+                                            <rd:DefaultName>CM_KuickPayNo</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>Solid</Style>
@@ -1105,10 +1133,10 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!CM_CustomerName.Value &amp; vbCrLf &amp;
+                                                    <Value>=Split(Fields!CM_CustomerName.Value, vbCrLf).GetValue(0) &amp; vbCrLf &amp;
 "PLOT NO/HOUSE NO. " &amp; Fields!PloNo.Value &amp; " " &amp;
-"STREET. " &amp; Fields!Block.Value &amp; " " &amp;
-"PHASE. " &amp; Fields!SubProject.Value</Value>
+"STREET. " &amp; Fields!StreetNumber.Value &amp; " " &amp;
+"PHASE. " &amp; Fields!PhaseNumber.Value</Value>
                                                     <Style>
                                                       <FontSize>9pt</FontSize>
                                                     </Style>
@@ -1366,13 +1394,13 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="TaxAmount">
+                                              <Textbox Name="current_gst">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Sum(Fields!TaxAmount.Value)</Value>
+                                                        <Value>=Sum(Fields!current_gst.Value)</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                         </Style>
@@ -1383,7 +1411,7 @@
                                                     </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>TaxAmount</rd:DefaultName>
+                                                <rd:DefaultName>current_gst</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>Solid</Style>
@@ -1586,13 +1614,13 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox39">
+                                              <Textbox Name="advance_payment">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value />
+                                                        <Value>=Sum(Fields!advance_payment.Value)</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                         </Style>
@@ -1603,7 +1631,7 @@
                                                     </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox39</rd:DefaultName>
+                                                <rd:DefaultName>advance_payment</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>Solid</Style>
@@ -1625,7 +1653,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>Trolley Trip</Value>
+                                                        <Value>Install. Amount</Value>
                                                         <Style>
                                                           <FontStyle>Normal</FontStyle>
                                                           <FontSize>8pt</FontSize>
@@ -1656,13 +1684,13 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox41">
+                                              <Textbox Name="TrollyTrip">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value />
+                                                        <Value>=Fields!installamount.Value</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                         </Style>
@@ -1673,7 +1701,7 @@
                                                     </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox41</rd:DefaultName>
+                                                <rd:DefaultName>TrollyTrip</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>Solid</Style>
@@ -1700,7 +1728,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>Food Safty</Value>
+                                                        <Value>Misc. Charges</Value>
                                                         <Style>
                                                           <FontStyle>Normal</FontStyle>
                                                           <FontSize>8pt</FontSize>
@@ -1731,13 +1759,13 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox44">
+                                              <Textbox Name="FoodSafety">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value />
+                                                        <Value>=Fields!MiscCharges.Value</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                         </Style>
@@ -1748,7 +1776,7 @@
                                                     </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox44</rd:DefaultName>
+                                                <rd:DefaultName>FoodSafety</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>Solid</Style>
@@ -1770,10 +1798,10 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>Misc. Charges</Value>
+                                                        <Value>Previous Arrears</Value>
                                                         <Style>
                                                           <FontStyle>Normal</FontStyle>
-                                                          <FontSize>8pt</FontSize>
+                                                          <FontSize>7.5pt</FontSize>
                                                           <FontWeight>Bold</FontWeight>
                                                           <TextDecoration>None</TextDecoration>
                                                           <Color>#000000</Color>
@@ -1801,13 +1829,13 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="MiscCharges">
+                                              <Textbox Name="RentAmount">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Sum(Fields!MiscCharges.Value)</Value>
+                                                        <Value>=Fields!PreviousArrears.Value</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                         </Style>
@@ -1818,7 +1846,7 @@
                                                     </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>MiscCharges</rd:DefaultName>
+                                                <rd:DefaultName>RentAmount</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>Solid</Style>
@@ -1976,7 +2004,7 @@
                                           </Style>
                                         </TextRun>
                                         <TextRun>
-                                          <Value> For complaints, please dial 515730650.</Value>
+                                          <Value> For complaints, please dial 5509277.</Value>
                                           <Style>
                                             <FontStyle>Normal</FontStyle>
                                             <FontSize>8pt</FontSize>
@@ -2073,13 +2101,13 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="GeneratedMonthYear">
+                                              <Textbox Name="compute">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value />
+                                                        <Value>=Fields!compute.Value</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                         </Style>
@@ -2090,7 +2118,7 @@
                                                     </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>GeneratedMonthYear</rd:DefaultName>
+                                                <rd:DefaultName>compute</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>Solid</Style>
@@ -2223,13 +2251,13 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox60">
+                                              <Textbox Name="AdvanceAmount">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value />
+                                                        <Value>=Sum(Fields!AdvanceAmount.Value)</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                         </Style>
@@ -2240,7 +2268,7 @@
                                                     </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox60</rd:DefaultName>
+                                                <rd:DefaultName>AdvanceAmount</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>Solid</Style>
@@ -2298,13 +2326,13 @@
                                           </TablixCell>
                                           <TablixCell>
                                             <CellContents>
-                                              <Textbox Name="Textbox62">
+                                              <Textbox Name="installamount">
                                                 <KeepTogether>true</KeepTogether>
                                                 <Paragraphs>
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value />
+                                                        <Value>=Sum(Fields!installamount.Value)</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                         </Style>
@@ -2315,7 +2343,7 @@
                                                     </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
-                                                <rd:DefaultName>Textbox62</rd:DefaultName>
+                                                <rd:DefaultName>installamount</rd:DefaultName>
                                                 <Style>
                                                   <Border>
                                                     <Style>Solid</Style>
@@ -2379,7 +2407,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Sum(Fields!BillAmountInDueDate.Value)</Value>
+                                                        <Value>=Fields!GTotal.Value</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                         </Style>
@@ -2831,7 +2859,6 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>6</ColSpan>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -2925,7 +2952,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.27691in</Height>
+                                    <Height>0.37066in</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -2984,7 +3011,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!PloNo.Value &amp; " / " &amp; Fields!Block.Value &amp; "/ " &amp; Fields!SubProject.Value</Value>
+                                                    <Value>=Fields!PloNo.Value &amp; " / " &amp; Fields!StreetNumber.Value &amp; "/ " &amp; Fields!PhaseNumber.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontSize>9pt</FontSize>
@@ -3586,7 +3613,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.29774in</Height>
+                                    <Height>0.37066in</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -3645,7 +3672,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!PloNo.Value &amp; " / " &amp; Fields!Block.Value &amp; "/ " &amp; Fields!SubProject.Value</Value>
+                                                    <Value>=Fields!PloNo.Value &amp; " / " &amp; Fields!StreetNumber.Value &amp; "/ " &amp; Fields!PhaseNumber.Value</Value>
                                                     <Style>
                                                       <FontSize>9pt</FontSize>
                                                     </Style>
@@ -3669,6 +3696,7 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -4140,8 +4168,8 @@
                               </TablixRowHierarchy>
                               <DataSetName>DataSet1</DataSetName>
                               <Top>5.49875in</Top>
-                              <Height>4.55208in</Height>
-                              <Width>7.27in</Width>
+                              <Height>4.71873in</Height>
+                              <Width>7.26999in</Width>
                               <ZIndex>5</ZIndex>
                               <Style>
                                 <Border>
@@ -4214,10 +4242,10 @@
       <AllowBlank>true</AllowBlank>
       <Prompt>Project</Prompt>
     </ReportParameter>
-    <ReportParameter Name="SubProject">
+    <ReportParameter Name="PhaseNumber">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
-      <Prompt>Sub Project</Prompt>
+      <Prompt>Phase Number</Prompt>
     </ReportParameter>
     <ReportParameter Name="BillingMonth">
       <DataType>String</DataType>
@@ -4243,7 +4271,7 @@
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>SubProject</ParameterName>
+          <ParameterName>PhaseNumber</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>

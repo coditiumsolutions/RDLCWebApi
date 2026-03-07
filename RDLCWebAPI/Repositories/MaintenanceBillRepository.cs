@@ -15,7 +15,7 @@ namespace RDLCWebAPI.Repositories
         }
 
         public async Task<List<MaintenanceBillData>> GetMaintenanceBillsAsync(
-            string? project, string? subProject, string? billingMonth, string? billingYear)
+            string? project, string? phaseNumber, string? billingMonth, string? billingYear)
         {
             var bills = new List<MaintenanceBillData>();
 
@@ -25,11 +25,11 @@ namespace RDLCWebAPI.Repositories
                 {
                     command.CommandType = CommandType.StoredProcedure;
 
-                    // Send NULL if parameter is empty or null
+                    // Updated parameter names
                     command.Parameters.AddWithValue("@Project",
                         string.IsNullOrEmpty(project) ? DBNull.Value : (object)project);
-                    command.Parameters.AddWithValue("@SubProject",
-                        string.IsNullOrEmpty(subProject) ? DBNull.Value : (object)subProject);
+                    command.Parameters.AddWithValue("@PhaseNumber",
+                        string.IsNullOrEmpty(phaseNumber) ? DBNull.Value : (object)phaseNumber);
                     command.Parameters.AddWithValue("@BillingMonth",
                         string.IsNullOrEmpty(billingMonth) ? DBNull.Value : (object)billingMonth);
                     command.Parameters.AddWithValue("@BillingYear",
@@ -44,74 +44,83 @@ namespace RDLCWebAPI.Repositories
                         {
                             var bill = new MaintenanceBillData
                             {
-                                // CustomersMaintenance fields
+                                // CustomersMaintenance fields (updated)
                                 CM_uid = GetInt32(reader, "CM_uid"),
-                                CM_CustomerNo = GetString(reader, "CM_CustomerNo"),
+                                CM_KuickPayNo = GetString(reader, "CM_KuickPayNo"),
                                 CM_CustomerName = GetString(reader, "CM_CustomerName"),
                                 CM_BTNo = GetString(reader, "CM_BTNo"),
-                                CM_MeterNo = GetString(reader, "CM_MeterNo"),
                                 CM_History = GetString(reader, "CM_History"),
 
-                                // Non-duplicate CM fields
+                                // Non-duplicate CM fields (removed deleted fields)
                                 GeneratedMonthYear = GetString(reader, "GeneratedMonthYear"),
                                 LocationSeqNo = GetString(reader, "LocationSeqNo"),
                                 CNICNo = GetString(reader, "CNICNo"),
                                 FatherName = GetString(reader, "FatherName"),
-                                InstalledOn = GetString(reader, "InstalledOn"),
                                 MobileNo = GetString(reader, "MobileNo"),
-                                TelephoneNo = GetString(reader, "TelephoneNo"),
-                                MeterType = GetString(reader, "MeterType"),
-                                NTNNumber = GetString(reader, "NTNNumber"),
                                 City = GetString(reader, "City"),
                                 Project = GetString(reader, "Project"),
-                                SubProject = GetString(reader, "SubProject"),
-                                TariffName = GetString(reader, "TariffName"),
-                                BankNo = GetString(reader, "BankNo"),
-                                BTNoMaintenance = GetString(reader, "BTNoMaintenance"),
+                                PhaseNumber = GetString(reader, "PhaseNumber"),     // Renamed
                                 Category = GetString(reader, "Category"),
-                                Block = GetString(reader, "Block"),
-                                PlotType = GetString(reader, "PlotType"),
                                 Size = GetString(reader, "Size"),
                                 Sector = GetString(reader, "Sector"),
                                 PloNo = GetString(reader, "PloNo"),
-                                BillStatusMaint = GetString(reader, "BillStatusMaint"),
-                                BillStatus = GetString(reader, "BillStatus"),
                                 BillGenerationStatus = GetString(reader, "BillGenerationStatus"),
                                 ConnectionStatus = GetString(reader, "ConnectionStatus"),
+                                CM_PlotStatus = GetString(reader, "CM_PlotStatus"), // Renamed
+                                StreetNumber = GetString(reader, "StreetNumber"),
+                                UnitType = GetString(reader, "UnitType"),
 
-                                // MaintenanceBills fields
+                                // MaintenanceBills fields (updated)
                                 MB_uid = GetInt32(reader, "MB_uid"),
-                                MB_CustomerNo = GetString(reader, "MB_CustomerNo"),
+                                MB_KuickPayNo = GetString(reader, "MB_KuickPayNo"),
                                 MB_CustomerName = GetString(reader, "MB_CustomerName"),
                                 MB_BTNo = GetString(reader, "MB_BTNo"),
-                                MB_MeterNo = GetString(reader, "MB_MeterNo"),
                                 MB_History = GetString(reader, "MB_History"),
 
                                 // Non-duplicate MB fields
-                                InvoiceNo = GetString(reader, "InvoiceNo"),
-                                PlotStatus = GetString(reader, "PlotStatus"),
+                                Plot_Number = GetString(reader, "Plot_Number"),
+                                Street_Number = GetString(reader, "Street_Number"),
+                                Phase_Number = GetString(reader, "Phase_Number"),
+                                Plot_Category = GetString(reader, "Plot_Category"),
+                                PROJECTNAME = GetString(reader, "PROJECTNAME"),
+                                MB_PlotStatus = GetString(reader, "MB_PlotStatus"), // Renamed
                                 BillingMonth = GetString(reader, "BillingMonth"),
                                 BillingYear = GetString(reader, "BillingYear"),
-                                BillingDate = GetNullableDateTime(reader, "BillingDate"),
                                 DueDate = GetNullableDateTime(reader, "DueDate"),
                                 IssueDate = GetNullableDateTime(reader, "IssueDate"),
-                                ValidDate = GetNullableDateTime(reader, "ValidDate"),
                                 PaymentStatus = GetString(reader, "PaymentStatus"),
                                 PaymentDate = GetNullableDateTime(reader, "PaymentDate"),
                                 PaymentMethod = GetString(reader, "PaymentMethod"),
                                 BankDetail = GetString(reader, "BankDetail"),
-                                LastUpdated = GetNullableDateTime(reader, "LastUpdated"),
+                                PAIDBYOPERATOR = GetString(reader, "PAIDBYOPERATOR"),
+                                AMOUNTPAID = GetNullableInt32(reader, "AMOUNTPAID"),
                                 MaintCharges = GetNullableInt32(reader, "MaintCharges"),
+                                WaterCharges = GetNullableInt32(reader, "WaterCharges"),
+                                OtherCharges = GetNullableInt32(reader, "OtherCharges"),
+                                MiscCharges = GetNullableInt32(reader, "MiscCharges"),
+                                installamount = GetNullableInt32(reader, "installamount"),
+                                current_gst = GetNullableInt32(reader, "current_gst"),
+                                Arrears = GetNullableInt32(reader, "Arrears"),
+                                PreviousArrears = GetNullableInt32(reader, "PreviousArrears"),
+                                advance_payment = GetNullableInt32(reader, "advance_payment"),
+                                AdvanceAmount = GetNullableInt32(reader, "AdvanceAmount"),
                                 BillAmountInDueDate = GetNullableInt32(reader, "BillAmountInDueDate"),
                                 BillSurcharge = GetNullableInt32(reader, "BillSurcharge"),
                                 BillAmountAfterDueDate = GetNullableInt32(reader, "BillAmountAfterDueDate"),
-                                Arrears = GetNullableInt32(reader, "Arrears"),
-                                TaxAmount = GetNullableInt32(reader, "TaxAmount"),
-                                Fine = GetNullableInt32(reader, "Fine"),
-                                OtherCharges = GetNullableInt32(reader, "OtherCharges"),
-                                WaterCharges = GetNullableInt32(reader, "WaterCharges"),
-                                FineDept = GetString(reader, "FineDept"),
-                                MiscCharges = GetNullableInt32(reader, "MiscCharges")
+                                GTotal = GetNullableInt32(reader, "GTotal"),
+                                compute = GetString(reader, "compute"),
+                                conndate = GetNullableDateTime(reader, "conndate"),
+                                UpdateBy = GetString(reader, "UpdateBy"),
+                                UpdateOn = GetNullableDateTime(reader, "UpdateOn"),
+                                PushedBy = GetString(reader, "PushedBy"),
+                                PushedOn = GetNullableDateTime(reader, "PushedOn"),
+
+                                // NEW FIELDS ADDED HERE
+                                RentAmount = GetNullableInt32(reader, "RentAmount"),
+                                FoodSafety = GetNullableInt32(reader, "FoodSafety"),
+                                TrollyTrip = GetNullableInt32(reader, "TrollyTrip"),
+                                ExtraWork = GetNullableInt32(reader, "ExtraWork"),
+                                DieselCost = GetNullableInt32(reader, "DieselCost")
                             };
 
                             bills.Add(bill);

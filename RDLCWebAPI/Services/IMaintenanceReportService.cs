@@ -3,6 +3,6 @@
     public interface IMaintenanceReportService
     {
         Task<byte[]> GenerateReportAsync(
-            string project, string subProject, string billingMonth, string billingYear);
+            string project, string phaseNumber, string billingMonth, string billingYear);
     }
 }

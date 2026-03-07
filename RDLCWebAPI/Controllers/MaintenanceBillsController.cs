@@ -17,7 +17,7 @@ namespace RDLCWebAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GenerateReport(
             [FromQuery] string? project = null,
-            [FromQuery] string? subProject = null,
+            [FromQuery] string? phaseNumber = null,      // Renamed from subProject
             [FromQuery] string? billingMonth = null,
             [FromQuery] string? billingYear = null)
         {
@@ -25,12 +25,12 @@ namespace RDLCWebAPI.Controllers
             {
                 Console.WriteLine($"API Call received with:");
                 Console.WriteLine($"  Project: {(string.IsNullOrEmpty(project) ? "NULL" : project)}");
-                Console.WriteLine($"  SubProject: {(string.IsNullOrEmpty(subProject) ? "NULL" : subProject)}");
+                Console.WriteLine($"  PhaseNumber: {(string.IsNullOrEmpty(phaseNumber) ? "NULL" : phaseNumber)}");
                 Console.WriteLine($"  Month: {(string.IsNullOrEmpty(billingMonth) ? "NULL" : billingMonth)}");
                 Console.WriteLine($"  Year: {(string.IsNullOrEmpty(billingYear) ? "NULL" : billingYear)}");
 
                 var reportBytes = await _reportService.GenerateReportAsync(
-                    project, subProject, billingMonth, billingYear);
+                    project, phaseNumber, billingMonth, billingYear);
 
                 string fileName = $"MaintenanceBill_{DateTime.Now:yyyyMMdd_HHmmss}.pdf";
                 return File(reportBytes, "application/pdf", fileName);

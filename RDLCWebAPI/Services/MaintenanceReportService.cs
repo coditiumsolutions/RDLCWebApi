@@ -12,9 +12,7 @@ namespace RDLCWebAPI.Services
         private readonly IMaintenanceBillRepository _billRepository;
         private readonly IWebHostEnvironment _environment;
 
-        // ⭐ Report file name - change as needed
-        private readonly string _reportFileName = "MaintenanceBillReport.rdlc";
-        // private readonly string _reportFileName = "TestReport.rdlc"; // For testing
+        private readonly string _reportFileName = "Safari - 1.rdlc";
 
         public MaintenanceReportService(
             IMaintenanceBillRepository billRepository,
@@ -26,18 +24,18 @@ namespace RDLCWebAPI.Services
         }
 
         public async Task<byte[]> GenerateReportAsync(
-            string project, string subProject, string billingMonth, string billingYear)
+            string project, string phaseNumber, string billingMonth, string billingYear)
         {
             try
             {
                 Console.WriteLine("========== MAINTENANCE REPORT DEBUG ==========");
-                Console.WriteLine($"Parameters: Project={project}, SubProject={subProject}, Month={billingMonth}, Year={billingYear}");
+                Console.WriteLine($"Parameters: Project={project}, PhaseNumber={phaseNumber}, Month={billingMonth}, Year={billingYear}");
                 Console.WriteLine($"Using Report File: {_reportFileName}");
 
                 // 1. Get data
                 var bills = await _billRepository.GetMaintenanceBillsAsync(
                     string.IsNullOrEmpty(project) ? null : project,
-                    string.IsNullOrEmpty(subProject) ? null : subProject,
+                    string.IsNullOrEmpty(phaseNumber) ? null : phaseNumber,
                     string.IsNullOrEmpty(billingMonth) ? null : billingMonth,
                     string.IsNullOrEmpty(billingYear) ? null : billingYear);
 
@@ -62,14 +60,14 @@ namespace RDLCWebAPI.Services
                 report.LoadReportDefinition(fs);
                 Console.WriteLine("Report loaded successfully");
 
-                // 5. Add data source (directly use DataSet1)
+                // 5. Add data source
                 report.DataSources.Add(new ReportDataSource("DataSet1", dt));
 
-                // 6. Set parameters
+                // 6. Set parameters (updated parameter name)
                 var parameters = new[]
                 {
                     new ReportParameter("Project", project ?? ""),
-                    new ReportParameter("SubProject", subProject ?? ""),
+                    new ReportParameter("PhaseNumber", phaseNumber ?? ""),    // Renamed
                     new ReportParameter("BillingMonth", billingMonth ?? ""),
                     new ReportParameter("BillingYear", billingYear ?? "")
                 };
@@ -137,7 +135,6 @@ namespace RDLCWebAPI.Services
                 {
                     var value = prop.GetValue(bill);
 
-                    // Handle null values properly
                     if (value == null)
                     {
                         if (prop.PropertyType == typeof(string))

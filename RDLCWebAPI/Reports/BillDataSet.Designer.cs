@@ -283,13 +283,11 @@ namespace RDLCWebAPI.Reports {
             
             private global::System.Data.DataColumn columnCM_uid;
             
-            private global::System.Data.DataColumn columnCM_CustomerNo;
+            private global::System.Data.DataColumn columnCM_KuickPayNo;
             
             private global::System.Data.DataColumn columnCM_CustomerName;
             
             private global::System.Data.DataColumn columnCM_BTNo;
-            
-            private global::System.Data.DataColumn columnCM_MeterNo;
             
             private global::System.Data.DataColumn columnCM_History;
             
@@ -301,33 +299,15 @@ namespace RDLCWebAPI.Reports {
             
             private global::System.Data.DataColumn columnFatherName;
             
-            private global::System.Data.DataColumn columnInstalledOn;
-            
             private global::System.Data.DataColumn columnMobileNo;
-            
-            private global::System.Data.DataColumn columnTelephoneNo;
-            
-            private global::System.Data.DataColumn columnMeterType;
-            
-            private global::System.Data.DataColumn columnNTNNumber;
             
             private global::System.Data.DataColumn columnCity;
             
             private global::System.Data.DataColumn columnProject;
             
-            private global::System.Data.DataColumn columnSubProject;
-            
-            private global::System.Data.DataColumn columnTariffName;
-            
-            private global::System.Data.DataColumn columnBankNo;
-            
-            private global::System.Data.DataColumn columnBTNoMaintenance;
+            private global::System.Data.DataColumn columnPhaseNumber;
             
             private global::System.Data.DataColumn columnCategory;
-            
-            private global::System.Data.DataColumn columnBlock;
-            
-            private global::System.Data.DataColumn columnPlotType;
             
             private global::System.Data.DataColumn columnSize;
             
@@ -335,41 +315,45 @@ namespace RDLCWebAPI.Reports {
             
             private global::System.Data.DataColumn columnPloNo;
             
-            private global::System.Data.DataColumn columnBillStatusMaint;
-            
-            private global::System.Data.DataColumn columnBillStatus;
-            
             private global::System.Data.DataColumn columnBillGenerationStatus;
             
             private global::System.Data.DataColumn columnConnectionStatus;
             
+            private global::System.Data.DataColumn columnCM_PlotStatus;
+            
+            private global::System.Data.DataColumn columnStreetNumber;
+            
+            private global::System.Data.DataColumn columnUnitType;
+            
             private global::System.Data.DataColumn columnMB_uid;
             
-            private global::System.Data.DataColumn columnMB_CustomerNo;
+            private global::System.Data.DataColumn columnMB_KuickPayNo;
             
             private global::System.Data.DataColumn columnMB_CustomerName;
             
             private global::System.Data.DataColumn columnMB_BTNo;
             
-            private global::System.Data.DataColumn columnMB_MeterNo;
-            
             private global::System.Data.DataColumn columnMB_History;
             
-            private global::System.Data.DataColumn columnInvoiceNo;
+            private global::System.Data.DataColumn columnPlot_Number;
             
-            private global::System.Data.DataColumn columnPlotStatus;
+            private global::System.Data.DataColumn columnStreet_Number;
+            
+            private global::System.Data.DataColumn columnPhase_Number;
+            
+            private global::System.Data.DataColumn columnPlot_Category;
+            
+            private global::System.Data.DataColumn columnPROJECTNAME;
+            
+            private global::System.Data.DataColumn columnMB_PlotStatus;
             
             private global::System.Data.DataColumn columnBillingMonth;
             
             private global::System.Data.DataColumn columnBillingYear;
             
-            private global::System.Data.DataColumn columnBillingDate;
-            
             private global::System.Data.DataColumn columnDueDate;
             
             private global::System.Data.DataColumn columnIssueDate;
-            
-            private global::System.Data.DataColumn columnValidDate;
             
             private global::System.Data.DataColumn columnPaymentStatus;
             
@@ -379,9 +363,29 @@ namespace RDLCWebAPI.Reports {
             
             private global::System.Data.DataColumn columnBankDetail;
             
-            private global::System.Data.DataColumn columnLastUpdated;
+            private global::System.Data.DataColumn columnPAIDBYOPERATOR;
+            
+            private global::System.Data.DataColumn columnAMOUNTPAID;
             
             private global::System.Data.DataColumn columnMaintCharges;
+            
+            private global::System.Data.DataColumn columnWaterCharges;
+            
+            private global::System.Data.DataColumn columnOtherCharges;
+            
+            private global::System.Data.DataColumn columnMiscCharges;
+            
+            private global::System.Data.DataColumn columninstallamount;
+            
+            private global::System.Data.DataColumn columncurrent_gst;
+            
+            private global::System.Data.DataColumn columnArrears;
+            
+            private global::System.Data.DataColumn columnPreviousArrears;
+            
+            private global::System.Data.DataColumn columnadvance_payment;
+            
+            private global::System.Data.DataColumn columnAdvanceAmount;
             
             private global::System.Data.DataColumn columnBillAmountInDueDate;
             
@@ -389,19 +393,29 @@ namespace RDLCWebAPI.Reports {
             
             private global::System.Data.DataColumn columnBillAmountAfterDueDate;
             
-            private global::System.Data.DataColumn columnArrears;
+            private global::System.Data.DataColumn columnGTotal;
             
-            private global::System.Data.DataColumn columnTaxAmount;
+            private global::System.Data.DataColumn columncompute;
             
-            private global::System.Data.DataColumn columnFine;
+            private global::System.Data.DataColumn columnconndate;
             
-            private global::System.Data.DataColumn columnOtherCharges;
+            private global::System.Data.DataColumn columnUpdateBy;
             
-            private global::System.Data.DataColumn columnWaterCharges;
+            private global::System.Data.DataColumn columnUpdateOn;
             
-            private global::System.Data.DataColumn columnFineDept;
+            private global::System.Data.DataColumn columnPushedBy;
             
-            private global::System.Data.DataColumn columnMiscCharges;
+            private global::System.Data.DataColumn columnPushedOn;
+            
+            private global::System.Data.DataColumn columnRentAmount;
+            
+            private global::System.Data.DataColumn columnFoodSafety;
+            
+            private global::System.Data.DataColumn columnTrollyTrip;
+            
+            private global::System.Data.DataColumn columnExtraWork;
+            
+            private global::System.Data.DataColumn columnDieselCost;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -448,9 +462,9 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CM_CustomerNoColumn {
+            public global::System.Data.DataColumn CM_KuickPayNoColumn {
                 get {
-                    return this.columnCM_CustomerNo;
+                    return this.columnCM_KuickPayNo;
                 }
             }
             
@@ -467,14 +481,6 @@ namespace RDLCWebAPI.Reports {
             public global::System.Data.DataColumn CM_BTNoColumn {
                 get {
                     return this.columnCM_BTNo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CM_MeterNoColumn {
-                get {
-                    return this.columnCM_MeterNo;
                 }
             }
             
@@ -520,41 +526,9 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn InstalledOnColumn {
-                get {
-                    return this.columnInstalledOn;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn MobileNoColumn {
                 get {
                     return this.columnMobileNo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TelephoneNoColumn {
-                get {
-                    return this.columnTelephoneNo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MeterTypeColumn {
-                get {
-                    return this.columnMeterType;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn NTNNumberColumn {
-                get {
-                    return this.columnNTNNumber;
                 }
             }
             
@@ -576,33 +550,9 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SubProjectColumn {
+            public global::System.Data.DataColumn PhaseNumberColumn {
                 get {
-                    return this.columnSubProject;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TariffNameColumn {
-                get {
-                    return this.columnTariffName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BankNoColumn {
-                get {
-                    return this.columnBankNo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BTNoMaintenanceColumn {
-                get {
-                    return this.columnBTNoMaintenance;
+                    return this.columnPhaseNumber;
                 }
             }
             
@@ -611,22 +561,6 @@ namespace RDLCWebAPI.Reports {
             public global::System.Data.DataColumn CategoryColumn {
                 get {
                     return this.columnCategory;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BlockColumn {
-                get {
-                    return this.columnBlock;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PlotTypeColumn {
-                get {
-                    return this.columnPlotType;
                 }
             }
             
@@ -656,22 +590,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BillStatusMaintColumn {
-                get {
-                    return this.columnBillStatusMaint;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BillStatusColumn {
-                get {
-                    return this.columnBillStatus;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn BillGenerationStatusColumn {
                 get {
                     return this.columnBillGenerationStatus;
@@ -688,6 +606,30 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn CM_PlotStatusColumn {
+                get {
+                    return this.columnCM_PlotStatus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn StreetNumberColumn {
+                get {
+                    return this.columnStreetNumber;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn UnitTypeColumn {
+                get {
+                    return this.columnUnitType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn MB_uidColumn {
                 get {
                     return this.columnMB_uid;
@@ -696,9 +638,9 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MB_CustomerNoColumn {
+            public global::System.Data.DataColumn MB_KuickPayNoColumn {
                 get {
-                    return this.columnMB_CustomerNo;
+                    return this.columnMB_KuickPayNo;
                 }
             }
             
@@ -720,14 +662,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MB_MeterNoColumn {
-                get {
-                    return this.columnMB_MeterNo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn MB_HistoryColumn {
                 get {
                     return this.columnMB_History;
@@ -736,17 +670,49 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn InvoiceNoColumn {
+            public global::System.Data.DataColumn Plot_NumberColumn {
                 get {
-                    return this.columnInvoiceNo;
+                    return this.columnPlot_Number;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PlotStatusColumn {
+            public global::System.Data.DataColumn Street_NumberColumn {
                 get {
-                    return this.columnPlotStatus;
+                    return this.columnStreet_Number;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Phase_NumberColumn {
+                get {
+                    return this.columnPhase_Number;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Plot_CategoryColumn {
+                get {
+                    return this.columnPlot_Category;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PROJECTNAMEColumn {
+                get {
+                    return this.columnPROJECTNAME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MB_PlotStatusColumn {
+                get {
+                    return this.columnMB_PlotStatus;
                 }
             }
             
@@ -768,14 +734,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BillingDateColumn {
-                get {
-                    return this.columnBillingDate;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn DueDateColumn {
                 get {
                     return this.columnDueDate;
@@ -787,14 +745,6 @@ namespace RDLCWebAPI.Reports {
             public global::System.Data.DataColumn IssueDateColumn {
                 get {
                     return this.columnIssueDate;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ValidDateColumn {
-                get {
-                    return this.columnValidDate;
                 }
             }
             
@@ -832,9 +782,17 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn LastUpdatedColumn {
+            public global::System.Data.DataColumn PAIDBYOPERATORColumn {
                 get {
-                    return this.columnLastUpdated;
+                    return this.columnPAIDBYOPERATOR;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AMOUNTPAIDColumn {
+                get {
+                    return this.columnAMOUNTPAID;
                 }
             }
             
@@ -843,6 +801,78 @@ namespace RDLCWebAPI.Reports {
             public global::System.Data.DataColumn MaintChargesColumn {
                 get {
                     return this.columnMaintCharges;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WaterChargesColumn {
+                get {
+                    return this.columnWaterCharges;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn OtherChargesColumn {
+                get {
+                    return this.columnOtherCharges;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MiscChargesColumn {
+                get {
+                    return this.columnMiscCharges;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn installamountColumn {
+                get {
+                    return this.columninstallamount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn current_gstColumn {
+                get {
+                    return this.columncurrent_gst;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ArrearsColumn {
+                get {
+                    return this.columnArrears;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PreviousArrearsColumn {
+                get {
+                    return this.columnPreviousArrears;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn advance_paymentColumn {
+                get {
+                    return this.columnadvance_payment;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn AdvanceAmountColumn {
+                get {
+                    return this.columnAdvanceAmount;
                 }
             }
             
@@ -872,57 +902,97 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ArrearsColumn {
+            public global::System.Data.DataColumn GTotalColumn {
                 get {
-                    return this.columnArrears;
+                    return this.columnGTotal;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TaxAmountColumn {
+            public global::System.Data.DataColumn computeColumn {
                 get {
-                    return this.columnTaxAmount;
+                    return this.columncompute;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FineColumn {
+            public global::System.Data.DataColumn conndateColumn {
                 get {
-                    return this.columnFine;
+                    return this.columnconndate;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OtherChargesColumn {
+            public global::System.Data.DataColumn UpdateByColumn {
                 get {
-                    return this.columnOtherCharges;
+                    return this.columnUpdateBy;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn WaterChargesColumn {
+            public global::System.Data.DataColumn UpdateOnColumn {
                 get {
-                    return this.columnWaterCharges;
+                    return this.columnUpdateOn;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FineDeptColumn {
+            public global::System.Data.DataColumn PushedByColumn {
                 get {
-                    return this.columnFineDept;
+                    return this.columnPushedBy;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MiscChargesColumn {
+            public global::System.Data.DataColumn PushedOnColumn {
                 get {
-                    return this.columnMiscCharges;
+                    return this.columnPushedOn;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RentAmountColumn {
+                get {
+                    return this.columnRentAmount;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FoodSafetyColumn {
+                get {
+                    return this.columnFoodSafety;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn TrollyTripColumn {
+                get {
+                    return this.columnTrollyTrip;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ExtraWorkColumn {
+                get {
+                    return this.columnExtraWork;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DieselCostColumn {
+                get {
+                    return this.columnDieselCost;
                 }
             }
             
@@ -964,128 +1034,142 @@ namespace RDLCWebAPI.Reports {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public GetMaintenanceBillsWithDetailsRow AddGetMaintenanceBillsWithDetailsRow(
-                        string CM_CustomerNo, 
+                        string CM_KuickPayNo, 
                         string CM_CustomerName, 
                         string CM_BTNo, 
-                        string CM_MeterNo, 
                         string CM_History, 
                         string GeneratedMonthYear, 
                         string LocationSeqNo, 
                         string CNICNo, 
                         string FatherName, 
-                        string InstalledOn, 
                         string MobileNo, 
-                        string TelephoneNo, 
-                        string MeterType, 
-                        string NTNNumber, 
                         string City, 
                         string Project, 
-                        string SubProject, 
-                        string TariffName, 
-                        string BankNo, 
-                        string BTNoMaintenance, 
+                        string PhaseNumber, 
                         string Category, 
-                        string Block, 
-                        string PlotType, 
                         string Size, 
                         string Sector, 
                         string PloNo, 
-                        string BillStatusMaint, 
-                        string BillStatus, 
                         string BillGenerationStatus, 
                         string ConnectionStatus, 
-                        string MB_CustomerNo, 
+                        string CM_PlotStatus, 
+                        string StreetNumber, 
+                        string UnitType, 
+                        string MB_KuickPayNo, 
                         string MB_CustomerName, 
                         string MB_BTNo, 
-                        string MB_MeterNo, 
                         string MB_History, 
-                        string InvoiceNo, 
-                        string PlotStatus, 
+                        string Plot_Number, 
+                        string Street_Number, 
+                        string Phase_Number, 
+                        string Plot_Category, 
+                        string PROJECTNAME, 
+                        string MB_PlotStatus, 
                         string BillingMonth, 
                         string BillingYear, 
-                        System.DateTime BillingDate, 
                         System.DateTime DueDate, 
                         System.DateTime IssueDate, 
-                        System.DateTime ValidDate, 
                         string PaymentStatus, 
                         System.DateTime PaymentDate, 
                         string PaymentMethod, 
                         string BankDetail, 
-                        System.DateTime LastUpdated, 
+                        string PAIDBYOPERATOR, 
+                        int AMOUNTPAID, 
                         int MaintCharges, 
+                        int WaterCharges, 
+                        int OtherCharges, 
+                        int MiscCharges, 
+                        int installamount, 
+                        int current_gst, 
+                        int Arrears, 
+                        int PreviousArrears, 
+                        int advance_payment, 
+                        int AdvanceAmount, 
                         int BillAmountInDueDate, 
                         int BillSurcharge, 
                         int BillAmountAfterDueDate, 
-                        int Arrears, 
-                        int TaxAmount, 
-                        int Fine, 
-                        int OtherCharges, 
-                        int WaterCharges, 
-                        string FineDept, 
-                        int MiscCharges) {
+                        int GTotal, 
+                        string compute, 
+                        System.DateTime conndate, 
+                        string UpdateBy, 
+                        System.DateTime UpdateOn, 
+                        string PushedBy, 
+                        System.DateTime PushedOn, 
+                        int RentAmount, 
+                        int FoodSafety, 
+                        int TrollyTrip, 
+                        int ExtraWork, 
+                        int DieselCost) {
                 GetMaintenanceBillsWithDetailsRow rowGetMaintenanceBillsWithDetailsRow = ((GetMaintenanceBillsWithDetailsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        CM_CustomerNo,
+                        CM_KuickPayNo,
                         CM_CustomerName,
                         CM_BTNo,
-                        CM_MeterNo,
                         CM_History,
                         GeneratedMonthYear,
                         LocationSeqNo,
                         CNICNo,
                         FatherName,
-                        InstalledOn,
                         MobileNo,
-                        TelephoneNo,
-                        MeterType,
-                        NTNNumber,
                         City,
                         Project,
-                        SubProject,
-                        TariffName,
-                        BankNo,
-                        BTNoMaintenance,
+                        PhaseNumber,
                         Category,
-                        Block,
-                        PlotType,
                         Size,
                         Sector,
                         PloNo,
-                        BillStatusMaint,
-                        BillStatus,
                         BillGenerationStatus,
                         ConnectionStatus,
+                        CM_PlotStatus,
+                        StreetNumber,
+                        UnitType,
                         null,
-                        MB_CustomerNo,
+                        MB_KuickPayNo,
                         MB_CustomerName,
                         MB_BTNo,
-                        MB_MeterNo,
                         MB_History,
-                        InvoiceNo,
-                        PlotStatus,
+                        Plot_Number,
+                        Street_Number,
+                        Phase_Number,
+                        Plot_Category,
+                        PROJECTNAME,
+                        MB_PlotStatus,
                         BillingMonth,
                         BillingYear,
-                        BillingDate,
                         DueDate,
                         IssueDate,
-                        ValidDate,
                         PaymentStatus,
                         PaymentDate,
                         PaymentMethod,
                         BankDetail,
-                        LastUpdated,
+                        PAIDBYOPERATOR,
+                        AMOUNTPAID,
                         MaintCharges,
+                        WaterCharges,
+                        OtherCharges,
+                        MiscCharges,
+                        installamount,
+                        current_gst,
+                        Arrears,
+                        PreviousArrears,
+                        advance_payment,
+                        AdvanceAmount,
                         BillAmountInDueDate,
                         BillSurcharge,
                         BillAmountAfterDueDate,
-                        Arrears,
-                        TaxAmount,
-                        Fine,
-                        OtherCharges,
-                        WaterCharges,
-                        FineDept,
-                        MiscCharges};
+                        GTotal,
+                        compute,
+                        conndate,
+                        UpdateBy,
+                        UpdateOn,
+                        PushedBy,
+                        PushedOn,
+                        RentAmount,
+                        FoodSafety,
+                        TrollyTrip,
+                        ExtraWork,
+                        DieselCost};
                 rowGetMaintenanceBillsWithDetailsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowGetMaintenanceBillsWithDetailsRow);
                 return rowGetMaintenanceBillsWithDetailsRow;
@@ -1093,8 +1177,9 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public GetMaintenanceBillsWithDetailsRow FindByMB_uid(int MB_uid) {
+            public GetMaintenanceBillsWithDetailsRow FindByCM_uidMB_uid(int CM_uid, int MB_uid) {
                 return ((GetMaintenanceBillsWithDetailsRow)(this.Rows.Find(new object[] {
+                            CM_uid,
                             MB_uid})));
             }
             
@@ -1116,66 +1201,73 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnCM_uid = base.Columns["CM_uid"];
-                this.columnCM_CustomerNo = base.Columns["CM_CustomerNo"];
+                this.columnCM_KuickPayNo = base.Columns["CM_KuickPayNo"];
                 this.columnCM_CustomerName = base.Columns["CM_CustomerName"];
                 this.columnCM_BTNo = base.Columns["CM_BTNo"];
-                this.columnCM_MeterNo = base.Columns["CM_MeterNo"];
                 this.columnCM_History = base.Columns["CM_History"];
                 this.columnGeneratedMonthYear = base.Columns["GeneratedMonthYear"];
                 this.columnLocationSeqNo = base.Columns["LocationSeqNo"];
                 this.columnCNICNo = base.Columns["CNICNo"];
                 this.columnFatherName = base.Columns["FatherName"];
-                this.columnInstalledOn = base.Columns["InstalledOn"];
                 this.columnMobileNo = base.Columns["MobileNo"];
-                this.columnTelephoneNo = base.Columns["TelephoneNo"];
-                this.columnMeterType = base.Columns["MeterType"];
-                this.columnNTNNumber = base.Columns["NTNNumber"];
                 this.columnCity = base.Columns["City"];
                 this.columnProject = base.Columns["Project"];
-                this.columnSubProject = base.Columns["SubProject"];
-                this.columnTariffName = base.Columns["TariffName"];
-                this.columnBankNo = base.Columns["BankNo"];
-                this.columnBTNoMaintenance = base.Columns["BTNoMaintenance"];
+                this.columnPhaseNumber = base.Columns["PhaseNumber"];
                 this.columnCategory = base.Columns["Category"];
-                this.columnBlock = base.Columns["Block"];
-                this.columnPlotType = base.Columns["PlotType"];
                 this.columnSize = base.Columns["Size"];
                 this.columnSector = base.Columns["Sector"];
                 this.columnPloNo = base.Columns["PloNo"];
-                this.columnBillStatusMaint = base.Columns["BillStatusMaint"];
-                this.columnBillStatus = base.Columns["BillStatus"];
                 this.columnBillGenerationStatus = base.Columns["BillGenerationStatus"];
                 this.columnConnectionStatus = base.Columns["ConnectionStatus"];
+                this.columnCM_PlotStatus = base.Columns["CM_PlotStatus"];
+                this.columnStreetNumber = base.Columns["StreetNumber"];
+                this.columnUnitType = base.Columns["UnitType"];
                 this.columnMB_uid = base.Columns["MB_uid"];
-                this.columnMB_CustomerNo = base.Columns["MB_CustomerNo"];
+                this.columnMB_KuickPayNo = base.Columns["MB_KuickPayNo"];
                 this.columnMB_CustomerName = base.Columns["MB_CustomerName"];
                 this.columnMB_BTNo = base.Columns["MB_BTNo"];
-                this.columnMB_MeterNo = base.Columns["MB_MeterNo"];
                 this.columnMB_History = base.Columns["MB_History"];
-                this.columnInvoiceNo = base.Columns["InvoiceNo"];
-                this.columnPlotStatus = base.Columns["PlotStatus"];
+                this.columnPlot_Number = base.Columns["Plot_Number"];
+                this.columnStreet_Number = base.Columns["Street_Number"];
+                this.columnPhase_Number = base.Columns["Phase_Number"];
+                this.columnPlot_Category = base.Columns["Plot_Category"];
+                this.columnPROJECTNAME = base.Columns["PROJECTNAME"];
+                this.columnMB_PlotStatus = base.Columns["MB_PlotStatus"];
                 this.columnBillingMonth = base.Columns["BillingMonth"];
                 this.columnBillingYear = base.Columns["BillingYear"];
-                this.columnBillingDate = base.Columns["BillingDate"];
                 this.columnDueDate = base.Columns["DueDate"];
                 this.columnIssueDate = base.Columns["IssueDate"];
-                this.columnValidDate = base.Columns["ValidDate"];
                 this.columnPaymentStatus = base.Columns["PaymentStatus"];
                 this.columnPaymentDate = base.Columns["PaymentDate"];
                 this.columnPaymentMethod = base.Columns["PaymentMethod"];
                 this.columnBankDetail = base.Columns["BankDetail"];
-                this.columnLastUpdated = base.Columns["LastUpdated"];
+                this.columnPAIDBYOPERATOR = base.Columns["PAIDBYOPERATOR"];
+                this.columnAMOUNTPAID = base.Columns["AMOUNTPAID"];
                 this.columnMaintCharges = base.Columns["MaintCharges"];
+                this.columnWaterCharges = base.Columns["WaterCharges"];
+                this.columnOtherCharges = base.Columns["OtherCharges"];
+                this.columnMiscCharges = base.Columns["MiscCharges"];
+                this.columninstallamount = base.Columns["installamount"];
+                this.columncurrent_gst = base.Columns["current_gst"];
+                this.columnArrears = base.Columns["Arrears"];
+                this.columnPreviousArrears = base.Columns["PreviousArrears"];
+                this.columnadvance_payment = base.Columns["advance_payment"];
+                this.columnAdvanceAmount = base.Columns["AdvanceAmount"];
                 this.columnBillAmountInDueDate = base.Columns["BillAmountInDueDate"];
                 this.columnBillSurcharge = base.Columns["BillSurcharge"];
                 this.columnBillAmountAfterDueDate = base.Columns["BillAmountAfterDueDate"];
-                this.columnArrears = base.Columns["Arrears"];
-                this.columnTaxAmount = base.Columns["TaxAmount"];
-                this.columnFine = base.Columns["Fine"];
-                this.columnOtherCharges = base.Columns["OtherCharges"];
-                this.columnWaterCharges = base.Columns["WaterCharges"];
-                this.columnFineDept = base.Columns["FineDept"];
-                this.columnMiscCharges = base.Columns["MiscCharges"];
+                this.columnGTotal = base.Columns["GTotal"];
+                this.columncompute = base.Columns["compute"];
+                this.columnconndate = base.Columns["conndate"];
+                this.columnUpdateBy = base.Columns["UpdateBy"];
+                this.columnUpdateOn = base.Columns["UpdateOn"];
+                this.columnPushedBy = base.Columns["PushedBy"];
+                this.columnPushedOn = base.Columns["PushedOn"];
+                this.columnRentAmount = base.Columns["RentAmount"];
+                this.columnFoodSafety = base.Columns["FoodSafety"];
+                this.columnTrollyTrip = base.Columns["TrollyTrip"];
+                this.columnExtraWork = base.Columns["ExtraWork"];
+                this.columnDieselCost = base.Columns["DieselCost"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1183,14 +1275,12 @@ namespace RDLCWebAPI.Reports {
             private void InitClass() {
                 this.columnCM_uid = new global::System.Data.DataColumn("CM_uid", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCM_uid);
-                this.columnCM_CustomerNo = new global::System.Data.DataColumn("CM_CustomerNo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCM_CustomerNo);
+                this.columnCM_KuickPayNo = new global::System.Data.DataColumn("CM_KuickPayNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCM_KuickPayNo);
                 this.columnCM_CustomerName = new global::System.Data.DataColumn("CM_CustomerName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCM_CustomerName);
                 this.columnCM_BTNo = new global::System.Data.DataColumn("CM_BTNo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCM_BTNo);
-                this.columnCM_MeterNo = new global::System.Data.DataColumn("CM_MeterNo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCM_MeterNo);
                 this.columnCM_History = new global::System.Data.DataColumn("CM_History", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCM_History);
                 this.columnGeneratedMonthYear = new global::System.Data.DataColumn("GeneratedMonthYear", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1201,76 +1291,62 @@ namespace RDLCWebAPI.Reports {
                 base.Columns.Add(this.columnCNICNo);
                 this.columnFatherName = new global::System.Data.DataColumn("FatherName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFatherName);
-                this.columnInstalledOn = new global::System.Data.DataColumn("InstalledOn", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnInstalledOn);
                 this.columnMobileNo = new global::System.Data.DataColumn("MobileNo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMobileNo);
-                this.columnTelephoneNo = new global::System.Data.DataColumn("TelephoneNo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTelephoneNo);
-                this.columnMeterType = new global::System.Data.DataColumn("MeterType", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMeterType);
-                this.columnNTNNumber = new global::System.Data.DataColumn("NTNNumber", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNTNNumber);
                 this.columnCity = new global::System.Data.DataColumn("City", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCity);
                 this.columnProject = new global::System.Data.DataColumn("Project", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProject);
-                this.columnSubProject = new global::System.Data.DataColumn("SubProject", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSubProject);
-                this.columnTariffName = new global::System.Data.DataColumn("TariffName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTariffName);
-                this.columnBankNo = new global::System.Data.DataColumn("BankNo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBankNo);
-                this.columnBTNoMaintenance = new global::System.Data.DataColumn("BTNoMaintenance", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBTNoMaintenance);
+                this.columnPhaseNumber = new global::System.Data.DataColumn("PhaseNumber", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhaseNumber);
                 this.columnCategory = new global::System.Data.DataColumn("Category", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCategory);
-                this.columnBlock = new global::System.Data.DataColumn("Block", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBlock);
-                this.columnPlotType = new global::System.Data.DataColumn("PlotType", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPlotType);
                 this.columnSize = new global::System.Data.DataColumn("Size", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSize);
                 this.columnSector = new global::System.Data.DataColumn("Sector", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSector);
                 this.columnPloNo = new global::System.Data.DataColumn("PloNo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPloNo);
-                this.columnBillStatusMaint = new global::System.Data.DataColumn("BillStatusMaint", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBillStatusMaint);
-                this.columnBillStatus = new global::System.Data.DataColumn("BillStatus", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBillStatus);
                 this.columnBillGenerationStatus = new global::System.Data.DataColumn("BillGenerationStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBillGenerationStatus);
                 this.columnConnectionStatus = new global::System.Data.DataColumn("ConnectionStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnConnectionStatus);
+                this.columnCM_PlotStatus = new global::System.Data.DataColumn("CM_PlotStatus", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCM_PlotStatus);
+                this.columnStreetNumber = new global::System.Data.DataColumn("StreetNumber", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStreetNumber);
+                this.columnUnitType = new global::System.Data.DataColumn("UnitType", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUnitType);
                 this.columnMB_uid = new global::System.Data.DataColumn("MB_uid", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMB_uid);
-                this.columnMB_CustomerNo = new global::System.Data.DataColumn("MB_CustomerNo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMB_CustomerNo);
+                this.columnMB_KuickPayNo = new global::System.Data.DataColumn("MB_KuickPayNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMB_KuickPayNo);
                 this.columnMB_CustomerName = new global::System.Data.DataColumn("MB_CustomerName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMB_CustomerName);
                 this.columnMB_BTNo = new global::System.Data.DataColumn("MB_BTNo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMB_BTNo);
-                this.columnMB_MeterNo = new global::System.Data.DataColumn("MB_MeterNo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMB_MeterNo);
                 this.columnMB_History = new global::System.Data.DataColumn("MB_History", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMB_History);
-                this.columnInvoiceNo = new global::System.Data.DataColumn("InvoiceNo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnInvoiceNo);
-                this.columnPlotStatus = new global::System.Data.DataColumn("PlotStatus", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPlotStatus);
+                this.columnPlot_Number = new global::System.Data.DataColumn("Plot_Number", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlot_Number);
+                this.columnStreet_Number = new global::System.Data.DataColumn("Street_Number", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStreet_Number);
+                this.columnPhase_Number = new global::System.Data.DataColumn("Phase_Number", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhase_Number);
+                this.columnPlot_Category = new global::System.Data.DataColumn("Plot_Category", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlot_Category);
+                this.columnPROJECTNAME = new global::System.Data.DataColumn("PROJECTNAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPROJECTNAME);
+                this.columnMB_PlotStatus = new global::System.Data.DataColumn("MB_PlotStatus", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMB_PlotStatus);
                 this.columnBillingMonth = new global::System.Data.DataColumn("BillingMonth", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBillingMonth);
                 this.columnBillingYear = new global::System.Data.DataColumn("BillingYear", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBillingYear);
-                this.columnBillingDate = new global::System.Data.DataColumn("BillingDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBillingDate);
                 this.columnDueDate = new global::System.Data.DataColumn("DueDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDueDate);
                 this.columnIssueDate = new global::System.Data.DataColumn("IssueDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIssueDate);
-                this.columnValidDate = new global::System.Data.DataColumn("ValidDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnValidDate);
                 this.columnPaymentStatus = new global::System.Data.DataColumn("PaymentStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPaymentStatus);
                 this.columnPaymentDate = new global::System.Data.DataColumn("PaymentDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
@@ -1279,94 +1355,119 @@ namespace RDLCWebAPI.Reports {
                 base.Columns.Add(this.columnPaymentMethod);
                 this.columnBankDetail = new global::System.Data.DataColumn("BankDetail", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBankDetail);
-                this.columnLastUpdated = new global::System.Data.DataColumn("LastUpdated", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLastUpdated);
+                this.columnPAIDBYOPERATOR = new global::System.Data.DataColumn("PAIDBYOPERATOR", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAIDBYOPERATOR);
+                this.columnAMOUNTPAID = new global::System.Data.DataColumn("AMOUNTPAID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAMOUNTPAID);
                 this.columnMaintCharges = new global::System.Data.DataColumn("MaintCharges", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMaintCharges);
+                this.columnWaterCharges = new global::System.Data.DataColumn("WaterCharges", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWaterCharges);
+                this.columnOtherCharges = new global::System.Data.DataColumn("OtherCharges", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOtherCharges);
+                this.columnMiscCharges = new global::System.Data.DataColumn("MiscCharges", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMiscCharges);
+                this.columninstallamount = new global::System.Data.DataColumn("installamount", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columninstallamount);
+                this.columncurrent_gst = new global::System.Data.DataColumn("current_gst", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncurrent_gst);
+                this.columnArrears = new global::System.Data.DataColumn("Arrears", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArrears);
+                this.columnPreviousArrears = new global::System.Data.DataColumn("PreviousArrears", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPreviousArrears);
+                this.columnadvance_payment = new global::System.Data.DataColumn("advance_payment", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnadvance_payment);
+                this.columnAdvanceAmount = new global::System.Data.DataColumn("AdvanceAmount", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAdvanceAmount);
                 this.columnBillAmountInDueDate = new global::System.Data.DataColumn("BillAmountInDueDate", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBillAmountInDueDate);
                 this.columnBillSurcharge = new global::System.Data.DataColumn("BillSurcharge", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBillSurcharge);
                 this.columnBillAmountAfterDueDate = new global::System.Data.DataColumn("BillAmountAfterDueDate", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBillAmountAfterDueDate);
-                this.columnArrears = new global::System.Data.DataColumn("Arrears", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnArrears);
-                this.columnTaxAmount = new global::System.Data.DataColumn("TaxAmount", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTaxAmount);
-                this.columnFine = new global::System.Data.DataColumn("Fine", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFine);
-                this.columnOtherCharges = new global::System.Data.DataColumn("OtherCharges", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOtherCharges);
-                this.columnWaterCharges = new global::System.Data.DataColumn("WaterCharges", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnWaterCharges);
-                this.columnFineDept = new global::System.Data.DataColumn("FineDept", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFineDept);
-                this.columnMiscCharges = new global::System.Data.DataColumn("MiscCharges", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMiscCharges);
+                this.columnGTotal = new global::System.Data.DataColumn("GTotal", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGTotal);
+                this.columncompute = new global::System.Data.DataColumn("compute", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncompute);
+                this.columnconndate = new global::System.Data.DataColumn("conndate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnconndate);
+                this.columnUpdateBy = new global::System.Data.DataColumn("UpdateBy", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUpdateBy);
+                this.columnUpdateOn = new global::System.Data.DataColumn("UpdateOn", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUpdateOn);
+                this.columnPushedBy = new global::System.Data.DataColumn("PushedBy", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPushedBy);
+                this.columnPushedOn = new global::System.Data.DataColumn("PushedOn", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPushedOn);
+                this.columnRentAmount = new global::System.Data.DataColumn("RentAmount", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRentAmount);
+                this.columnFoodSafety = new global::System.Data.DataColumn("FoodSafety", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFoodSafety);
+                this.columnTrollyTrip = new global::System.Data.DataColumn("TrollyTrip", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTrollyTrip);
+                this.columnExtraWork = new global::System.Data.DataColumn("ExtraWork", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnExtraWork);
+                this.columnDieselCost = new global::System.Data.DataColumn("DieselCost", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDieselCost);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnCM_uid,
                                 this.columnMB_uid}, true));
                 this.columnCM_uid.AutoIncrement = true;
                 this.columnCM_uid.AutoIncrementSeed = -1;
                 this.columnCM_uid.AutoIncrementStep = -1;
                 this.columnCM_uid.AllowDBNull = false;
                 this.columnCM_uid.ReadOnly = true;
-                this.columnCM_CustomerNo.AllowDBNull = false;
-                this.columnCM_CustomerNo.MaxLength = 20;
+                this.columnCM_KuickPayNo.AllowDBNull = false;
+                this.columnCM_KuickPayNo.MaxLength = 20;
                 this.columnCM_CustomerName.MaxLength = 200;
                 this.columnCM_BTNo.MaxLength = 20;
-                this.columnCM_MeterNo.MaxLength = 50;
                 this.columnCM_History.MaxLength = 2147483647;
                 this.columnGeneratedMonthYear.MaxLength = 50;
                 this.columnLocationSeqNo.MaxLength = 50;
                 this.columnCNICNo.MaxLength = 50;
                 this.columnFatherName.MaxLength = 70;
-                this.columnInstalledOn.MaxLength = 20;
                 this.columnMobileNo.MaxLength = 50;
-                this.columnTelephoneNo.MaxLength = 50;
-                this.columnMeterType.MaxLength = 50;
-                this.columnNTNNumber.MaxLength = 50;
                 this.columnCity.MaxLength = 50;
                 this.columnProject.AllowDBNull = false;
                 this.columnProject.MaxLength = 50;
-                this.columnSubProject.AllowDBNull = false;
-                this.columnSubProject.MaxLength = 50;
-                this.columnTariffName.AllowDBNull = false;
-                this.columnTariffName.MaxLength = 50;
-                this.columnBankNo.MaxLength = 50;
-                this.columnBTNoMaintenance.MaxLength = 30;
+                this.columnPhaseNumber.AllowDBNull = false;
+                this.columnPhaseNumber.MaxLength = 50;
                 this.columnCategory.AllowDBNull = false;
                 this.columnCategory.MaxLength = 100;
-                this.columnBlock.AllowDBNull = false;
-                this.columnBlock.MaxLength = 100;
-                this.columnPlotType.MaxLength = 50;
                 this.columnSize.MaxLength = 50;
                 this.columnSector.AllowDBNull = false;
                 this.columnSector.MaxLength = 100;
                 this.columnPloNo.AllowDBNull = false;
                 this.columnPloNo.MaxLength = 100;
-                this.columnBillStatusMaint.MaxLength = 2147483647;
-                this.columnBillStatus.MaxLength = 2147483647;
                 this.columnBillGenerationStatus.MaxLength = 50;
                 this.columnConnectionStatus.MaxLength = 20;
+                this.columnCM_PlotStatus.MaxLength = 50;
+                this.columnStreetNumber.MaxLength = 50;
+                this.columnUnitType.MaxLength = 50;
                 this.columnMB_uid.AutoIncrement = true;
                 this.columnMB_uid.AutoIncrementSeed = -1;
                 this.columnMB_uid.AutoIncrementStep = -1;
                 this.columnMB_uid.AllowDBNull = false;
                 this.columnMB_uid.ReadOnly = true;
-                this.columnMB_uid.Unique = true;
-                this.columnMB_CustomerNo.MaxLength = 50;
-                this.columnMB_CustomerName.MaxLength = 100;
+                this.columnMB_KuickPayNo.MaxLength = 50;
+                this.columnMB_CustomerName.MaxLength = 250;
                 this.columnMB_BTNo.MaxLength = 50;
-                this.columnMB_MeterNo.MaxLength = 50;
                 this.columnMB_History.MaxLength = 2147483647;
-                this.columnInvoiceNo.MaxLength = 50;
-                this.columnPlotStatus.MaxLength = 50;
+                this.columnPlot_Number.MaxLength = 50;
+                this.columnStreet_Number.MaxLength = 50;
+                this.columnPhase_Number.MaxLength = 50;
+                this.columnPlot_Category.MaxLength = 50;
+                this.columnPROJECTNAME.MaxLength = 100;
+                this.columnMB_PlotStatus.MaxLength = 50;
                 this.columnBillingMonth.MaxLength = 50;
                 this.columnBillingYear.MaxLength = 50;
                 this.columnPaymentStatus.MaxLength = 50;
                 this.columnPaymentMethod.MaxLength = 50;
                 this.columnBankDetail.MaxLength = 50;
-                this.columnFineDept.MaxLength = 100;
+                this.columnPAIDBYOPERATOR.MaxLength = 100;
+                this.columncompute.MaxLength = 255;
+                this.columnUpdateBy.MaxLength = 100;
+                this.columnPushedBy.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1520,12 +1621,12 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string CM_CustomerNo {
+            public string CM_KuickPayNo {
                 get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.CM_CustomerNoColumn]));
+                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.CM_KuickPayNoColumn]));
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.CM_CustomerNoColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.CM_KuickPayNoColumn] = value;
                 }
             }
             
@@ -1560,23 +1661,6 @@ namespace RDLCWebAPI.Reports {
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.CM_BTNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string CM_MeterNo {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.CM_MeterNoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CM_MeterNo\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
-                                "Null.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.CM_MeterNoColumn] = value;
                 }
             }
             
@@ -1667,23 +1751,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string InstalledOn {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.InstalledOnColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'InstalledOn\' in table \'GetMaintenanceBillsWithDetails\' is D" +
-                                "BNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.InstalledOnColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string MobileNo {
                 get {
                     try {
@@ -1696,57 +1763,6 @@ namespace RDLCWebAPI.Reports {
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.MobileNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string TelephoneNo {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.TelephoneNoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TelephoneNo\' in table \'GetMaintenanceBillsWithDetails\' is D" +
-                                "BNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.TelephoneNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string MeterType {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.MeterTypeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'MeterType\' in table \'GetMaintenanceBillsWithDetails\' is DBN" +
-                                "ull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.MeterTypeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string NTNNumber {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.NTNNumberColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'NTNNumber\' in table \'GetMaintenanceBillsWithDetails\' is DBN" +
-                                "ull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.NTNNumberColumn] = value;
                 }
             }
             
@@ -1779,57 +1795,12 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string SubProject {
+            public string PhaseNumber {
                 get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.SubProjectColumn]));
+                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PhaseNumberColumn]));
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.SubProjectColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string TariffName {
-                get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.TariffNameColumn]));
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.TariffNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string BankNo {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.BankNoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'BankNo\' in table \'GetMaintenanceBillsWithDetails\' is DBNull" +
-                                ".", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.BankNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string BTNoMaintenance {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.BTNoMaintenanceColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'BTNoMaintenance\' in table \'GetMaintenanceBillsWithDetails\' " +
-                                "is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.BTNoMaintenanceColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.PhaseNumberColumn] = value;
                 }
             }
             
@@ -1841,34 +1812,6 @@ namespace RDLCWebAPI.Reports {
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.CategoryColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Block {
-                get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.BlockColumn]));
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.BlockColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string PlotType {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PlotTypeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'PlotType\' in table \'GetMaintenanceBillsWithDetails\' is DBNu" +
-                                "ll.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.PlotTypeColumn] = value;
                 }
             }
             
@@ -1912,40 +1855,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string BillStatusMaint {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.BillStatusMaintColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'BillStatusMaint\' in table \'GetMaintenanceBillsWithDetails\' " +
-                                "is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.BillStatusMaintColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string BillStatus {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.BillStatusColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'BillStatus\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
-                                "Null.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.BillStatusColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string BillGenerationStatus {
                 get {
                     try {
@@ -1980,6 +1889,57 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string CM_PlotStatus {
+                get {
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.CM_PlotStatusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CM_PlotStatus\' in table \'GetMaintenanceBillsWithDetails\' is" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.CM_PlotStatusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string StreetNumber {
+                get {
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.StreetNumberColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'StreetNumber\' in table \'GetMaintenanceBillsWithDetails\' is " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.StreetNumberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string UnitType {
+                get {
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.UnitTypeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UnitType\' in table \'GetMaintenanceBillsWithDetails\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.UnitTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int MB_uid {
                 get {
                     return ((int)(this[this.tableGetMaintenanceBillsWithDetails.MB_uidColumn]));
@@ -1991,18 +1951,18 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string MB_CustomerNo {
+            public string MB_KuickPayNo {
                 get {
                     try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.MB_CustomerNoColumn]));
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.MB_KuickPayNoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'MB_CustomerNo\' in table \'GetMaintenanceBillsWithDetails\' is" +
+                        throw new global::System.Data.StrongTypingException("The value for column \'MB_KuickPayNo\' in table \'GetMaintenanceBillsWithDetails\' is" +
                                 " DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.MB_CustomerNoColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.MB_KuickPayNoColumn] = value;
                 }
             }
             
@@ -2042,23 +2002,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string MB_MeterNo {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.MB_MeterNoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'MB_MeterNo\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
-                                "Null.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.MB_MeterNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string MB_History {
                 get {
                     try {
@@ -2076,35 +2019,103 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string InvoiceNo {
+            public string Plot_Number {
                 get {
                     try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.InvoiceNoColumn]));
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.Plot_NumberColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'InvoiceNo\' in table \'GetMaintenanceBillsWithDetails\' is DBN" +
-                                "ull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Plot_Number\' in table \'GetMaintenanceBillsWithDetails\' is D" +
+                                "BNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.InvoiceNoColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.Plot_NumberColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string PlotStatus {
+            public string Street_Number {
                 get {
                     try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PlotStatusColumn]));
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.Street_NumberColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'PlotStatus\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
-                                "Null.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Street_Number\' in table \'GetMaintenanceBillsWithDetails\' is" +
+                                " DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.PlotStatusColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.Street_NumberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Phase_Number {
+                get {
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.Phase_NumberColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Phase_Number\' in table \'GetMaintenanceBillsWithDetails\' is " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.Phase_NumberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Plot_Category {
+                get {
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.Plot_CategoryColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Plot_Category\' in table \'GetMaintenanceBillsWithDetails\' is" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.Plot_CategoryColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PROJECTNAME {
+                get {
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PROJECTNAMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PROJECTNAME\' in table \'GetMaintenanceBillsWithDetails\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.PROJECTNAMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string MB_PlotStatus {
+                get {
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.MB_PlotStatusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MB_PlotStatus\' in table \'GetMaintenanceBillsWithDetails\' is" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.MB_PlotStatusColumn] = value;
                 }
             }
             
@@ -2144,23 +2155,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime BillingDate {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tableGetMaintenanceBillsWithDetails.BillingDateColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'BillingDate\' in table \'GetMaintenanceBillsWithDetails\' is D" +
-                                "BNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.BillingDateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public System.DateTime DueDate {
                 get {
                     try {
@@ -2190,23 +2184,6 @@ namespace RDLCWebAPI.Reports {
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.IssueDateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime ValidDate {
-                get {
-                    try {
-                        return ((global::System.DateTime)(this[this.tableGetMaintenanceBillsWithDetails.ValidDateColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ValidDate\' in table \'GetMaintenanceBillsWithDetails\' is DBN" +
-                                "ull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.ValidDateColumn] = value;
                 }
             }
             
@@ -2280,18 +2257,35 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime LastUpdated {
+            public string PAIDBYOPERATOR {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableGetMaintenanceBillsWithDetails.LastUpdatedColumn]));
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PAIDBYOPERATORColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'LastUpdated\' in table \'GetMaintenanceBillsWithDetails\' is D" +
-                                "BNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAIDBYOPERATOR\' in table \'GetMaintenanceBillsWithDetails\' i" +
+                                "s DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.LastUpdatedColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.PAIDBYOPERATORColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int AMOUNTPAID {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.AMOUNTPAIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AMOUNTPAID\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.AMOUNTPAIDColumn] = value;
                 }
             }
             
@@ -2309,6 +2303,159 @@ namespace RDLCWebAPI.Reports {
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.MaintChargesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int WaterCharges {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.WaterChargesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'WaterCharges\' in table \'GetMaintenanceBillsWithDetails\' is " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.WaterChargesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int OtherCharges {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.OtherChargesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OtherCharges\' in table \'GetMaintenanceBillsWithDetails\' is " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.OtherChargesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int MiscCharges {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.MiscChargesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MiscCharges\' in table \'GetMaintenanceBillsWithDetails\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.MiscChargesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int installamount {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.installamountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'installamount\' in table \'GetMaintenanceBillsWithDetails\' is" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.installamountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int current_gst {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.current_gstColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'current_gst\' in table \'GetMaintenanceBillsWithDetails\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.current_gstColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int Arrears {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.ArrearsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Arrears\' in table \'GetMaintenanceBillsWithDetails\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.ArrearsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int PreviousArrears {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.PreviousArrearsColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PreviousArrears\' in table \'GetMaintenanceBillsWithDetails\' " +
+                                "is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.PreviousArrearsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int advance_payment {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.advance_paymentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'advance_payment\' in table \'GetMaintenanceBillsWithDetails\' " +
+                                "is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.advance_paymentColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int AdvanceAmount {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.AdvanceAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AdvanceAmount\' in table \'GetMaintenanceBillsWithDetails\' is" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.AdvanceAmountColumn] = value;
                 }
             }
             
@@ -2365,119 +2512,205 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Arrears {
+            public int GTotal {
                 get {
                     try {
-                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.ArrearsColumn]));
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.GTotalColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Arrears\' in table \'GetMaintenanceBillsWithDetails\' is DBNul" +
+                        throw new global::System.Data.StrongTypingException("The value for column \'GTotal\' in table \'GetMaintenanceBillsWithDetails\' is DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.GTotalColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string compute {
+                get {
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.computeColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'compute\' in table \'GetMaintenanceBillsWithDetails\' is DBNul" +
                                 "l.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.ArrearsColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.computeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int TaxAmount {
+            public System.DateTime conndate {
                 get {
                     try {
-                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.TaxAmountColumn]));
+                        return ((global::System.DateTime)(this[this.tableGetMaintenanceBillsWithDetails.conndateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TaxAmount\' in table \'GetMaintenanceBillsWithDetails\' is DBN" +
-                                "ull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.TaxAmountColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int Fine {
-                get {
-                    try {
-                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.FineColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Fine\' in table \'GetMaintenanceBillsWithDetails\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.FineColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int OtherCharges {
-                get {
-                    try {
-                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.OtherChargesColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OtherCharges\' in table \'GetMaintenanceBillsWithDetails\' is " +
-                                "DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.OtherChargesColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int WaterCharges {
-                get {
-                    try {
-                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.WaterChargesColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'WaterCharges\' in table \'GetMaintenanceBillsWithDetails\' is " +
-                                "DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.WaterChargesColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string FineDept {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.FineDeptColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FineDept\' in table \'GetMaintenanceBillsWithDetails\' is DBNu" +
+                        throw new global::System.Data.StrongTypingException("The value for column \'conndate\' in table \'GetMaintenanceBillsWithDetails\' is DBNu" +
                                 "ll.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.FineDeptColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.conndateColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int MiscCharges {
+            public string UpdateBy {
                 get {
                     try {
-                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.MiscChargesColumn]));
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.UpdateByColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'MiscCharges\' in table \'GetMaintenanceBillsWithDetails\' is D" +
-                                "BNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'UpdateBy\' in table \'GetMaintenanceBillsWithDetails\' is DBNu" +
+                                "ll.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.MiscChargesColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.UpdateByColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime UpdateOn {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableGetMaintenanceBillsWithDetails.UpdateOnColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'UpdateOn\' in table \'GetMaintenanceBillsWithDetails\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.UpdateOnColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string PushedBy {
+                get {
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PushedByColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PushedBy\' in table \'GetMaintenanceBillsWithDetails\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.PushedByColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public System.DateTime PushedOn {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableGetMaintenanceBillsWithDetails.PushedOnColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PushedOn\' in table \'GetMaintenanceBillsWithDetails\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.PushedOnColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int RentAmount {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.RentAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RentAmount\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.RentAmountColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int FoodSafety {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.FoodSafetyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FoodSafety\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.FoodSafetyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int TrollyTrip {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.TrollyTripColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TrollyTrip\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.TrollyTripColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int ExtraWork {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.ExtraWorkColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ExtraWork\' in table \'GetMaintenanceBillsWithDetails\' is DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.ExtraWorkColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int DieselCost {
+                get {
+                    try {
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.DieselCostColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DieselCost\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.DieselCostColumn] = value;
                 }
             }
             
@@ -2503,18 +2736,6 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetCM_BTNoNull() {
                 this[this.tableGetMaintenanceBillsWithDetails.CM_BTNoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsCM_MeterNoNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.CM_MeterNoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetCM_MeterNoNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.CM_MeterNoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2579,18 +2800,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsInstalledOnNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.InstalledOnColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetInstalledOnNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.InstalledOnColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsMobileNoNull() {
                 return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MobileNoColumn);
             }
@@ -2599,42 +2808,6 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetMobileNoNull() {
                 this[this.tableGetMaintenanceBillsWithDetails.MobileNoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTelephoneNoNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.TelephoneNoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTelephoneNoNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.TelephoneNoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMeterTypeNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MeterTypeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMeterTypeNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.MeterTypeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsNTNNumberNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.NTNNumberColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetNTNNumberNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.NTNNumberColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2651,42 +2824,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsBankNoNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.BankNoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetBankNoNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.BankNoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsBTNoMaintenanceNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.BTNoMaintenanceColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetBTNoMaintenanceNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.BTNoMaintenanceColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsPlotTypeNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.PlotTypeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetPlotTypeNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.PlotTypeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSizeNull() {
                 return this.IsNull(this.tableGetMaintenanceBillsWithDetails.SizeColumn);
             }
@@ -2695,30 +2832,6 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetSizeNull() {
                 this[this.tableGetMaintenanceBillsWithDetails.SizeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsBillStatusMaintNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.BillStatusMaintColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetBillStatusMaintNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.BillStatusMaintColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsBillStatusNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.BillStatusColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetBillStatusNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.BillStatusColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2747,14 +2860,50 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMB_CustomerNoNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MB_CustomerNoColumn);
+            public bool IsCM_PlotStatusNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.CM_PlotStatusColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMB_CustomerNoNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.MB_CustomerNoColumn] = global::System.Convert.DBNull;
+            public void SetCM_PlotStatusNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.CM_PlotStatusColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsStreetNumberNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.StreetNumberColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetStreetNumberNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.StreetNumberColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsUnitTypeNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.UnitTypeColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetUnitTypeNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.UnitTypeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMB_KuickPayNoNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MB_KuickPayNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMB_KuickPayNoNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.MB_KuickPayNoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2783,18 +2932,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMB_MeterNoNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MB_MeterNoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMB_MeterNoNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.MB_MeterNoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsMB_HistoryNull() {
                 return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MB_HistoryColumn);
             }
@@ -2807,26 +2944,74 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsInvoiceNoNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.InvoiceNoColumn);
+            public bool IsPlot_NumberNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.Plot_NumberColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetInvoiceNoNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.InvoiceNoColumn] = global::System.Convert.DBNull;
+            public void SetPlot_NumberNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.Plot_NumberColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsPlotStatusNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.PlotStatusColumn);
+            public bool IsStreet_NumberNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.Street_NumberColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetPlotStatusNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.PlotStatusColumn] = global::System.Convert.DBNull;
+            public void SetStreet_NumberNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.Street_NumberColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPhase_NumberNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.Phase_NumberColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPhase_NumberNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.Phase_NumberColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPlot_CategoryNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.Plot_CategoryColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPlot_CategoryNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.Plot_CategoryColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPROJECTNAMENull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.PROJECTNAMEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPROJECTNAMENull() {
+                this[this.tableGetMaintenanceBillsWithDetails.PROJECTNAMEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMB_PlotStatusNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MB_PlotStatusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMB_PlotStatusNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.MB_PlotStatusColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2855,18 +3040,6 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsBillingDateNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.BillingDateColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetBillingDateNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.BillingDateColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDueDateNull() {
                 return this.IsNull(this.tableGetMaintenanceBillsWithDetails.DueDateColumn);
             }
@@ -2887,18 +3060,6 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetIssueDateNull() {
                 this[this.tableGetMaintenanceBillsWithDetails.IssueDateColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsValidDateNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.ValidDateColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetValidDateNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.ValidDateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2951,14 +3112,26 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsLastUpdatedNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.LastUpdatedColumn);
+            public bool IsPAIDBYOPERATORNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.PAIDBYOPERATORColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetLastUpdatedNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.LastUpdatedColumn] = global::System.Convert.DBNull;
+            public void SetPAIDBYOPERATORNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.PAIDBYOPERATORColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsAMOUNTPAIDNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.AMOUNTPAIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetAMOUNTPAIDNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.AMOUNTPAIDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2971,6 +3144,114 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetMaintChargesNull() {
                 this[this.tableGetMaintenanceBillsWithDetails.MaintChargesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsWaterChargesNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.WaterChargesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetWaterChargesNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.WaterChargesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsOtherChargesNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.OtherChargesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetOtherChargesNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.OtherChargesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMiscChargesNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MiscChargesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMiscChargesNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.MiscChargesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsinstallamountNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.installamountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetinstallamountNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.installamountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Iscurrent_gstNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.current_gstColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setcurrent_gstNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.current_gstColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsArrearsNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.ArrearsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetArrearsNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.ArrearsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPreviousArrearsNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.PreviousArrearsColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPreviousArrearsNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.PreviousArrearsColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isadvance_paymentNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.advance_paymentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setadvance_paymentNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.advance_paymentColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsAdvanceAmountNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.AdvanceAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetAdvanceAmountNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.AdvanceAmountColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3011,86 +3292,146 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsArrearsNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.ArrearsColumn);
+            public bool IsGTotalNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.GTotalColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetArrearsNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.ArrearsColumn] = global::System.Convert.DBNull;
+            public void SetGTotalNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.GTotalColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTaxAmountNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.TaxAmountColumn);
+            public bool IscomputeNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.computeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTaxAmountNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.TaxAmountColumn] = global::System.Convert.DBNull;
+            public void SetcomputeNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.computeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsFineNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.FineColumn);
+            public bool IsconndateNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.conndateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetFineNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.FineColumn] = global::System.Convert.DBNull;
+            public void SetconndateNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.conndateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOtherChargesNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.OtherChargesColumn);
+            public bool IsUpdateByNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.UpdateByColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOtherChargesNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.OtherChargesColumn] = global::System.Convert.DBNull;
+            public void SetUpdateByNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.UpdateByColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsWaterChargesNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.WaterChargesColumn);
+            public bool IsUpdateOnNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.UpdateOnColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetWaterChargesNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.WaterChargesColumn] = global::System.Convert.DBNull;
+            public void SetUpdateOnNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.UpdateOnColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsFineDeptNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.FineDeptColumn);
+            public bool IsPushedByNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.PushedByColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetFineDeptNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.FineDeptColumn] = global::System.Convert.DBNull;
+            public void SetPushedByNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.PushedByColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMiscChargesNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MiscChargesColumn);
+            public bool IsPushedOnNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.PushedOnColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMiscChargesNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.MiscChargesColumn] = global::System.Convert.DBNull;
+            public void SetPushedOnNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.PushedOnColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRentAmountNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.RentAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRentAmountNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.RentAmountColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFoodSafetyNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.FoodSafetyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFoodSafetyNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.FoodSafetyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsTrollyTripNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.TrollyTripColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetTrollyTripNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.TrollyTripColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsExtraWorkNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.ExtraWorkColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetExtraWorkNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.ExtraWorkColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDieselCostNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.DieselCostColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDieselCostNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.DieselCostColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -3254,66 +3595,73 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "GetMaintenanceBillsWithDetails";
             tableMapping.ColumnMappings.Add("CM_uid", "CM_uid");
-            tableMapping.ColumnMappings.Add("CM_CustomerNo", "CM_CustomerNo");
+            tableMapping.ColumnMappings.Add("CM_KuickPayNo", "CM_KuickPayNo");
             tableMapping.ColumnMappings.Add("CM_CustomerName", "CM_CustomerName");
             tableMapping.ColumnMappings.Add("CM_BTNo", "CM_BTNo");
-            tableMapping.ColumnMappings.Add("CM_MeterNo", "CM_MeterNo");
             tableMapping.ColumnMappings.Add("CM_History", "CM_History");
             tableMapping.ColumnMappings.Add("GeneratedMonthYear", "GeneratedMonthYear");
             tableMapping.ColumnMappings.Add("LocationSeqNo", "LocationSeqNo");
             tableMapping.ColumnMappings.Add("CNICNo", "CNICNo");
             tableMapping.ColumnMappings.Add("FatherName", "FatherName");
-            tableMapping.ColumnMappings.Add("InstalledOn", "InstalledOn");
             tableMapping.ColumnMappings.Add("MobileNo", "MobileNo");
-            tableMapping.ColumnMappings.Add("TelephoneNo", "TelephoneNo");
-            tableMapping.ColumnMappings.Add("MeterType", "MeterType");
-            tableMapping.ColumnMappings.Add("NTNNumber", "NTNNumber");
             tableMapping.ColumnMappings.Add("City", "City");
             tableMapping.ColumnMappings.Add("Project", "Project");
-            tableMapping.ColumnMappings.Add("SubProject", "SubProject");
-            tableMapping.ColumnMappings.Add("TariffName", "TariffName");
-            tableMapping.ColumnMappings.Add("BankNo", "BankNo");
-            tableMapping.ColumnMappings.Add("BTNoMaintenance", "BTNoMaintenance");
+            tableMapping.ColumnMappings.Add("PhaseNumber", "PhaseNumber");
             tableMapping.ColumnMappings.Add("Category", "Category");
-            tableMapping.ColumnMappings.Add("Block", "Block");
-            tableMapping.ColumnMappings.Add("PlotType", "PlotType");
             tableMapping.ColumnMappings.Add("Size", "Size");
             tableMapping.ColumnMappings.Add("Sector", "Sector");
             tableMapping.ColumnMappings.Add("PloNo", "PloNo");
-            tableMapping.ColumnMappings.Add("BillStatusMaint", "BillStatusMaint");
-            tableMapping.ColumnMappings.Add("BillStatus", "BillStatus");
             tableMapping.ColumnMappings.Add("BillGenerationStatus", "BillGenerationStatus");
             tableMapping.ColumnMappings.Add("ConnectionStatus", "ConnectionStatus");
+            tableMapping.ColumnMappings.Add("CM_PlotStatus", "CM_PlotStatus");
+            tableMapping.ColumnMappings.Add("StreetNumber", "StreetNumber");
+            tableMapping.ColumnMappings.Add("UnitType", "UnitType");
             tableMapping.ColumnMappings.Add("MB_uid", "MB_uid");
-            tableMapping.ColumnMappings.Add("MB_CustomerNo", "MB_CustomerNo");
+            tableMapping.ColumnMappings.Add("MB_KuickPayNo", "MB_KuickPayNo");
             tableMapping.ColumnMappings.Add("MB_CustomerName", "MB_CustomerName");
             tableMapping.ColumnMappings.Add("MB_BTNo", "MB_BTNo");
-            tableMapping.ColumnMappings.Add("MB_MeterNo", "MB_MeterNo");
             tableMapping.ColumnMappings.Add("MB_History", "MB_History");
-            tableMapping.ColumnMappings.Add("InvoiceNo", "InvoiceNo");
-            tableMapping.ColumnMappings.Add("PlotStatus", "PlotStatus");
+            tableMapping.ColumnMappings.Add("Plot_Number", "Plot_Number");
+            tableMapping.ColumnMappings.Add("Street_Number", "Street_Number");
+            tableMapping.ColumnMappings.Add("Phase_Number", "Phase_Number");
+            tableMapping.ColumnMappings.Add("Plot_Category", "Plot_Category");
+            tableMapping.ColumnMappings.Add("PROJECTNAME", "PROJECTNAME");
+            tableMapping.ColumnMappings.Add("MB_PlotStatus", "MB_PlotStatus");
             tableMapping.ColumnMappings.Add("BillingMonth", "BillingMonth");
             tableMapping.ColumnMappings.Add("BillingYear", "BillingYear");
-            tableMapping.ColumnMappings.Add("BillingDate", "BillingDate");
             tableMapping.ColumnMappings.Add("DueDate", "DueDate");
             tableMapping.ColumnMappings.Add("IssueDate", "IssueDate");
-            tableMapping.ColumnMappings.Add("ValidDate", "ValidDate");
             tableMapping.ColumnMappings.Add("PaymentStatus", "PaymentStatus");
             tableMapping.ColumnMappings.Add("PaymentDate", "PaymentDate");
             tableMapping.ColumnMappings.Add("PaymentMethod", "PaymentMethod");
             tableMapping.ColumnMappings.Add("BankDetail", "BankDetail");
-            tableMapping.ColumnMappings.Add("LastUpdated", "LastUpdated");
+            tableMapping.ColumnMappings.Add("PAIDBYOPERATOR", "PAIDBYOPERATOR");
+            tableMapping.ColumnMappings.Add("AMOUNTPAID", "AMOUNTPAID");
             tableMapping.ColumnMappings.Add("MaintCharges", "MaintCharges");
+            tableMapping.ColumnMappings.Add("WaterCharges", "WaterCharges");
+            tableMapping.ColumnMappings.Add("OtherCharges", "OtherCharges");
+            tableMapping.ColumnMappings.Add("MiscCharges", "MiscCharges");
+            tableMapping.ColumnMappings.Add("installamount", "installamount");
+            tableMapping.ColumnMappings.Add("current_gst", "current_gst");
+            tableMapping.ColumnMappings.Add("Arrears", "Arrears");
+            tableMapping.ColumnMappings.Add("PreviousArrears", "PreviousArrears");
+            tableMapping.ColumnMappings.Add("advance_payment", "advance_payment");
+            tableMapping.ColumnMappings.Add("AdvanceAmount", "AdvanceAmount");
             tableMapping.ColumnMappings.Add("BillAmountInDueDate", "BillAmountInDueDate");
             tableMapping.ColumnMappings.Add("BillSurcharge", "BillSurcharge");
             tableMapping.ColumnMappings.Add("BillAmountAfterDueDate", "BillAmountAfterDueDate");
-            tableMapping.ColumnMappings.Add("Arrears", "Arrears");
-            tableMapping.ColumnMappings.Add("TaxAmount", "TaxAmount");
-            tableMapping.ColumnMappings.Add("Fine", "Fine");
-            tableMapping.ColumnMappings.Add("OtherCharges", "OtherCharges");
-            tableMapping.ColumnMappings.Add("WaterCharges", "WaterCharges");
-            tableMapping.ColumnMappings.Add("FineDept", "FineDept");
-            tableMapping.ColumnMappings.Add("MiscCharges", "MiscCharges");
+            tableMapping.ColumnMappings.Add("GTotal", "GTotal");
+            tableMapping.ColumnMappings.Add("compute", "compute");
+            tableMapping.ColumnMappings.Add("conndate", "conndate");
+            tableMapping.ColumnMappings.Add("UpdateBy", "UpdateBy");
+            tableMapping.ColumnMappings.Add("UpdateOn", "UpdateOn");
+            tableMapping.ColumnMappings.Add("PushedBy", "PushedBy");
+            tableMapping.ColumnMappings.Add("PushedOn", "PushedOn");
+            tableMapping.ColumnMappings.Add("RentAmount", "RentAmount");
+            tableMapping.ColumnMappings.Add("FoodSafety", "FoodSafety");
+            tableMapping.ColumnMappings.Add("TrollyTrip", "TrollyTrip");
+            tableMapping.ColumnMappings.Add("ExtraWork", "ExtraWork");
+            tableMapping.ColumnMappings.Add("DieselCost", "DieselCost");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -3321,8 +3669,8 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = "Data Source=172.20.228.2;Initial Catalog=BMSSafariRwp;Persist Security Info=True;" +
-                "User ID=sa;Password=Pakistan@786;TrustServerCertificate=True";
+            this._connection.ConnectionString = "Data Source=172.20.229.2;Initial Catalog=BMSSafariRwp;Persist Security Info=True;" +
+                "User ID=admin;Password=Pakistan@786;TrustServerCertificate=True";
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3335,7 +3683,7 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Project", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SubProject", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PhaseNumber", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BillingMonth", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BillingYear", global::System.Data.SqlDbType.NVarChar, 4, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -3344,7 +3692,7 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BillDataSet.GetMaintenanceBillsWithDetailsDataTable dataTable, string Project, string SubProject, string BillingMonth, string BillingYear) {
+        public virtual int Fill(BillDataSet.GetMaintenanceBillsWithDetailsDataTable dataTable, string Project, string PhaseNumber, string BillingMonth, string BillingYear) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Project == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -3352,11 +3700,11 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Project));
             }
-            if ((SubProject == null)) {
+            if ((PhaseNumber == null)) {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(SubProject));
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PhaseNumber));
             }
             if ((BillingMonth == null)) {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -3381,7 +3729,7 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BillDataSet.GetMaintenanceBillsWithDetailsDataTable GetData(string Project, string SubProject, string BillingMonth, string BillingYear) {
+        public virtual BillDataSet.GetMaintenanceBillsWithDetailsDataTable GetData(string Project, string PhaseNumber, string BillingMonth, string BillingYear) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Project == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -3389,11 +3737,11 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Project));
             }
-            if ((SubProject == null)) {
+            if ((PhaseNumber == null)) {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(SubProject));
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PhaseNumber));
             }
             if ((BillingMonth == null)) {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
