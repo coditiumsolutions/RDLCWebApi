@@ -4,14 +4,12 @@ namespace RDLCWebAPI.Models
 {
     public class MaintenanceBillData
     {
-        // CustomersMaintenance fields (with CM_ prefix for duplicates)
+        // CustomersMaintenance fields
         public int CM_uid { get; set; }
         public string? CM_KuickPayNo { get; set; }
         public string? CM_CustomerName { get; set; }
         public string? CM_BTNo { get; set; }
         public string? CM_History { get; set; }
-
-        // Non-duplicate CustomersMaintenance fields
         public string? GeneratedMonthYear { get; set; }
         public string? LocationSeqNo { get; set; }
         public string? CNICNo { get; set; }
@@ -19,31 +17,29 @@ namespace RDLCWebAPI.Models
         public string? MobileNo { get; set; }
         public string? City { get; set; }
         public string? Project { get; set; }
-        public string? PhaseNumber { get; set; }      // Renamed from SubProject
+        public string? PhaseName { get; set; }
         public string? Category { get; set; }
         public string? Size { get; set; }
         public string? Sector { get; set; }
         public string? PloNo { get; set; }
         public string? BillGenerationStatus { get; set; }
         public string? ConnectionStatus { get; set; }
-        public string? CM_PlotStatus { get; set; }     // Renamed from PlotStatus (to avoid conflict)
+        public string? CM_PlotStatus { get; set; }
         public string? StreetNumber { get; set; }
         public string? UnitType { get; set; }
 
-        // MaintenanceBills fields (with MB_ prefix for duplicates)
+        // MaintenanceBills fields
         public int MB_uid { get; set; }
         public string? MB_KuickPayNo { get; set; }
         public string? MB_CustomerName { get; set; }
         public string? MB_BTNo { get; set; }
         public string? MB_History { get; set; }
-
-        // Non-duplicate MaintenanceBills fields
         public string? Plot_Number { get; set; }
         public string? Street_Number { get; set; }
-        public string? Phase_Number { get; set; }
-        public string? Plot_Category { get; set; }
-        public string? PROJECTNAME { get; set; }
-        public string? MB_PlotStatus { get; set; }     // Renamed from PlotStatus (to avoid conflict)
+        public string? MB_PhaseName { get; set; }    // ✅ Instead of PhaseName1
+        public string? MB_Category { get; set; }     // ✅ Instead of Category1
+        public string? MB_Project { get; set; }      // ✅ Instead of Project1
+        public string? MB_PlotStatus { get; set; }
         public string? BillingMonth { get; set; }
         public string? BillingYear { get; set; }
         public DateTime? DueDate { get; set; }
@@ -75,7 +71,7 @@ namespace RDLCWebAPI.Models
         public string? PushedBy { get; set; }
         public DateTime? PushedOn { get; set; }
 
-        // NEW FIELDS ADDED HERE
+        // New Fields
         public int? RentAmount { get; set; }
         public int? FoodSafety { get; set; }
         public int? TrollyTrip { get; set; }

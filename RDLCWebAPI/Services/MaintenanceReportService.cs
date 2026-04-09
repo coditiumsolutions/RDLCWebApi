@@ -12,7 +12,6 @@ namespace RDLCWebAPI.Services
         private readonly IMaintenanceBillRepository _billRepository;
         private readonly IWebHostEnvironment _environment;
 
-        // Dictionary to map report types to file names
         private readonly Dictionary<string, string> _reportFiles = new Dictionary<string, string>
         {
             { "Safari-1", "Safari - 1.rdlc" },
@@ -33,71 +32,64 @@ namespace RDLCWebAPI.Services
         public async Task<byte[]> GenerateReportAsync(
             string reportType,
             string project,
-            string phaseNumber,
+            string phaseName,
             string billingMonth,
             string billingYear)
         {
             try
             {
-                // Validate report type
                 if (!_reportFiles.ContainsKey(reportType))
                 {
-                    throw new ArgumentException($"Invalid report type: {reportType}. Valid types: {string.Join(", ", _reportFiles.Keys)}");
+                    throw new ArgumentException($"Invalid report type: {reportType}");
                 }
 
                 string reportFileName = _reportFiles[reportType];
 
-                Console.WriteLine("========== MAINTENANCE REPORT DEBUG ==========");
-                Console.WriteLine($"Report Type: {reportType}");
+                Console.WriteLine($"========== {reportType} REPORT DEBUG ==========");
                 Console.WriteLine($"Report File: {reportFileName}");
-                Console.WriteLine($"Parameters: Project={project}, PhaseNumber={phaseNumber}, Month={billingMonth}, Year={billingYear}");
+                Console.WriteLine($"Parameters: Project={project}, PhaseName={phaseName}, Month={billingMonth}, Year={billingYear}");
 
-                // 1. Get data
                 var bills = await _billRepository.GetMaintenanceBillsAsync(
                     string.IsNullOrEmpty(project) ? null : project,
-                    string.IsNullOrEmpty(phaseNumber) ? null : phaseNumber,
+                    string.IsNullOrEmpty(phaseName) ? null : phaseName,
                     string.IsNullOrEmpty(billingMonth) ? null : billingMonth,
                     string.IsNullOrEmpty(billingYear) ? null : billingYear);
 
-                Console.WriteLine($"Records retrieved: {bills?.Count ?? 0}");
-
                 if (bills == null || bills.Count == 0)
                 {
-                    throw new Exception($"No data found for the specified parameters");
+                    throw new Exception("No data found for the specified parameters");
                 }
 
-                // 2. Convert to DataTable
                 DataTable dt = CreateDataTable(bills);
-                Console.WriteLine($"DataTable created: {dt.Columns.Count} columns, {dt.Rows.Count} rows");
 
-                // 3. Find report file
+                // Debug: Print all column names
+                Console.WriteLine("=== DATATABLE COLUMNS ===");
+                foreach (DataColumn col in dt.Columns)
+                {
+                    Console.WriteLine($"Column: {col.ColumnName}");
+                }
+
                 string reportPath = FindReportFile(reportFileName);
                 Console.WriteLine($"Report path: {reportPath}");
 
-                // 4. Load report
                 using var fs = new FileStream(reportPath, FileMode.Open, FileAccess.Read);
                 using var report = new LocalReport();
                 report.LoadReportDefinition(fs);
-                Console.WriteLine("Report loaded successfully");
-
-                // 5. Add data source
                 report.DataSources.Add(new ReportDataSource("DataSet1", dt));
 
-                // 6. Set parameters
+                // ✅ FIXED: Parameter names match RDLC report
                 var parameters = new[]
                 {
-                    new ReportParameter("Project", project ?? ""),
-                    new ReportParameter("PhaseNumber", phaseNumber ?? ""),
+                    new ReportParameter("Project", project ?? ""),      // Changed from "Project"
+                    new ReportParameter("PhaseName", phaseName ?? ""),  // Changed from "PhaseNumber"
                     new ReportParameter("BillingMonth", billingMonth ?? ""),
                     new ReportParameter("BillingYear", billingYear ?? "")
                 };
-
                 report.SetParameters(parameters);
                 Console.WriteLine("Parameters set successfully");
 
-                // 7. Render PDF
                 var renderedBytes = report.Render("PDF");
-                Console.WriteLine($"✅ Report generated: {renderedBytes.Length} bytes for {reportType}");
+                Console.WriteLine($"✅ Report generated: {renderedBytes.Length} bytes");
                 return renderedBytes;
             }
             catch (Exception ex)
@@ -107,7 +99,7 @@ namespace RDLCWebAPI.Services
                 {
                     Console.WriteLine($"INNER: {ex.InnerException.Message}");
                 }
-                throw new Exception($"Report generation failed for {reportType}: {ex.Message}", ex);
+                throw;
             }
         }
 
@@ -154,7 +146,6 @@ namespace RDLCWebAPI.Services
                 foreach (var prop in properties)
                 {
                     var value = prop.GetValue(bill);
-
                     if (value == null)
                     {
                         if (prop.PropertyType == typeof(string))

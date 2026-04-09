@@ -305,7 +305,7 @@ namespace RDLCWebAPI.Reports {
             
             private global::System.Data.DataColumn columnProject;
             
-            private global::System.Data.DataColumn columnPhaseNumber;
+            private global::System.Data.DataColumn columnPhaseName;
             
             private global::System.Data.DataColumn columnCategory;
             
@@ -339,11 +339,11 @@ namespace RDLCWebAPI.Reports {
             
             private global::System.Data.DataColumn columnStreet_Number;
             
-            private global::System.Data.DataColumn columnPhase_Number;
+            private global::System.Data.DataColumn columnMB_PhaseName;
             
-            private global::System.Data.DataColumn columnPlot_Category;
+            private global::System.Data.DataColumn columnMB_Category;
             
-            private global::System.Data.DataColumn columnPROJECTNAME;
+            private global::System.Data.DataColumn columnMB_Project;
             
             private global::System.Data.DataColumn columnMB_PlotStatus;
             
@@ -550,9 +550,9 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PhaseNumberColumn {
+            public global::System.Data.DataColumn PhaseNameColumn {
                 get {
-                    return this.columnPhaseNumber;
+                    return this.columnPhaseName;
                 }
             }
             
@@ -686,25 +686,25 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Phase_NumberColumn {
+            public global::System.Data.DataColumn MB_PhaseNameColumn {
                 get {
-                    return this.columnPhase_Number;
+                    return this.columnMB_PhaseName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn Plot_CategoryColumn {
+            public global::System.Data.DataColumn MB_CategoryColumn {
                 get {
-                    return this.columnPlot_Category;
+                    return this.columnMB_Category;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PROJECTNAMEColumn {
+            public global::System.Data.DataColumn MB_ProjectColumn {
                 get {
-                    return this.columnPROJECTNAME;
+                    return this.columnMB_Project;
                 }
             }
             
@@ -1045,7 +1045,7 @@ namespace RDLCWebAPI.Reports {
                         string MobileNo, 
                         string City, 
                         string Project, 
-                        string PhaseNumber, 
+                        string PhaseName, 
                         string Category, 
                         string Size, 
                         string Sector, 
@@ -1061,9 +1061,9 @@ namespace RDLCWebAPI.Reports {
                         string MB_History, 
                         string Plot_Number, 
                         string Street_Number, 
-                        string Phase_Number, 
-                        string Plot_Category, 
-                        string PROJECTNAME, 
+                        string MB_PhaseName, 
+                        string MB_Category, 
+                        string MB_Project, 
                         string MB_PlotStatus, 
                         string BillingMonth, 
                         string BillingYear, 
@@ -1114,7 +1114,7 @@ namespace RDLCWebAPI.Reports {
                         MobileNo,
                         City,
                         Project,
-                        PhaseNumber,
+                        PhaseName,
                         Category,
                         Size,
                         Sector,
@@ -1131,9 +1131,9 @@ namespace RDLCWebAPI.Reports {
                         MB_History,
                         Plot_Number,
                         Street_Number,
-                        Phase_Number,
-                        Plot_Category,
-                        PROJECTNAME,
+                        MB_PhaseName,
+                        MB_Category,
+                        MB_Project,
                         MB_PlotStatus,
                         BillingMonth,
                         BillingYear,
@@ -1212,7 +1212,7 @@ namespace RDLCWebAPI.Reports {
                 this.columnMobileNo = base.Columns["MobileNo"];
                 this.columnCity = base.Columns["City"];
                 this.columnProject = base.Columns["Project"];
-                this.columnPhaseNumber = base.Columns["PhaseNumber"];
+                this.columnPhaseName = base.Columns["PhaseName"];
                 this.columnCategory = base.Columns["Category"];
                 this.columnSize = base.Columns["Size"];
                 this.columnSector = base.Columns["Sector"];
@@ -1229,9 +1229,9 @@ namespace RDLCWebAPI.Reports {
                 this.columnMB_History = base.Columns["MB_History"];
                 this.columnPlot_Number = base.Columns["Plot_Number"];
                 this.columnStreet_Number = base.Columns["Street_Number"];
-                this.columnPhase_Number = base.Columns["Phase_Number"];
-                this.columnPlot_Category = base.Columns["Plot_Category"];
-                this.columnPROJECTNAME = base.Columns["PROJECTNAME"];
+                this.columnMB_PhaseName = base.Columns["MB_PhaseName"];
+                this.columnMB_Category = base.Columns["MB_Category"];
+                this.columnMB_Project = base.Columns["MB_Project"];
                 this.columnMB_PlotStatus = base.Columns["MB_PlotStatus"];
                 this.columnBillingMonth = base.Columns["BillingMonth"];
                 this.columnBillingYear = base.Columns["BillingYear"];
@@ -1297,8 +1297,8 @@ namespace RDLCWebAPI.Reports {
                 base.Columns.Add(this.columnCity);
                 this.columnProject = new global::System.Data.DataColumn("Project", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProject);
-                this.columnPhaseNumber = new global::System.Data.DataColumn("PhaseNumber", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPhaseNumber);
+                this.columnPhaseName = new global::System.Data.DataColumn("PhaseName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPhaseName);
                 this.columnCategory = new global::System.Data.DataColumn("Category", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCategory);
                 this.columnSize = new global::System.Data.DataColumn("Size", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1331,12 +1331,12 @@ namespace RDLCWebAPI.Reports {
                 base.Columns.Add(this.columnPlot_Number);
                 this.columnStreet_Number = new global::System.Data.DataColumn("Street_Number", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnStreet_Number);
-                this.columnPhase_Number = new global::System.Data.DataColumn("Phase_Number", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPhase_Number);
-                this.columnPlot_Category = new global::System.Data.DataColumn("Plot_Category", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPlot_Category);
-                this.columnPROJECTNAME = new global::System.Data.DataColumn("PROJECTNAME", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPROJECTNAME);
+                this.columnMB_PhaseName = new global::System.Data.DataColumn("MB_PhaseName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMB_PhaseName);
+                this.columnMB_Category = new global::System.Data.DataColumn("MB_Category", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMB_Category);
+                this.columnMB_Project = new global::System.Data.DataColumn("MB_Project", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMB_Project);
                 this.columnMB_PlotStatus = new global::System.Data.DataColumn("MB_PlotStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMB_PlotStatus);
                 this.columnBillingMonth = new global::System.Data.DataColumn("BillingMonth", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1430,8 +1430,8 @@ namespace RDLCWebAPI.Reports {
                 this.columnCity.MaxLength = 50;
                 this.columnProject.AllowDBNull = false;
                 this.columnProject.MaxLength = 50;
-                this.columnPhaseNumber.AllowDBNull = false;
-                this.columnPhaseNumber.MaxLength = 50;
+                this.columnPhaseName.AllowDBNull = false;
+                this.columnPhaseName.MaxLength = 50;
                 this.columnCategory.AllowDBNull = false;
                 this.columnCategory.MaxLength = 100;
                 this.columnSize.MaxLength = 50;
@@ -1455,9 +1455,9 @@ namespace RDLCWebAPI.Reports {
                 this.columnMB_History.MaxLength = 2147483647;
                 this.columnPlot_Number.MaxLength = 50;
                 this.columnStreet_Number.MaxLength = 50;
-                this.columnPhase_Number.MaxLength = 50;
-                this.columnPlot_Category.MaxLength = 50;
-                this.columnPROJECTNAME.MaxLength = 100;
+                this.columnMB_PhaseName.MaxLength = 50;
+                this.columnMB_Category.MaxLength = 50;
+                this.columnMB_Project.MaxLength = 100;
                 this.columnMB_PlotStatus.MaxLength = 50;
                 this.columnBillingMonth.MaxLength = 50;
                 this.columnBillingYear.MaxLength = 50;
@@ -1795,12 +1795,12 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string PhaseNumber {
+            public string PhaseName {
                 get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PhaseNumberColumn]));
+                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PhaseNameColumn]));
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.PhaseNumberColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.PhaseNameColumn] = value;
                 }
             }
             
@@ -2053,52 +2053,52 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Phase_Number {
+            public string MB_PhaseName {
                 get {
                     try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.Phase_NumberColumn]));
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.MB_PhaseNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Phase_Number\' in table \'GetMaintenanceBillsWithDetails\' is " +
+                        throw new global::System.Data.StrongTypingException("The value for column \'MB_PhaseName\' in table \'GetMaintenanceBillsWithDetails\' is " +
                                 "DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.Phase_NumberColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.MB_PhaseNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Plot_Category {
+            public string MB_Category {
                 get {
                     try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.Plot_CategoryColumn]));
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.MB_CategoryColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Plot_Category\' in table \'GetMaintenanceBillsWithDetails\' is" +
-                                " DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetMaintenanceBillsWithDetails.Plot_CategoryColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string PROJECTNAME {
-                get {
-                    try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PROJECTNAMEColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'PROJECTNAME\' in table \'GetMaintenanceBillsWithDetails\' is D" +
+                        throw new global::System.Data.StrongTypingException("The value for column \'MB_Category\' in table \'GetMaintenanceBillsWithDetails\' is D" +
                                 "BNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.PROJECTNAMEColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.MB_CategoryColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string MB_Project {
+                get {
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.MB_ProjectColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MB_Project\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.MB_ProjectColumn] = value;
                 }
             }
             
@@ -2968,38 +2968,38 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsPhase_NumberNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.Phase_NumberColumn);
+            public bool IsMB_PhaseNameNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MB_PhaseNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetPhase_NumberNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.Phase_NumberColumn] = global::System.Convert.DBNull;
+            public void SetMB_PhaseNameNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.MB_PhaseNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsPlot_CategoryNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.Plot_CategoryColumn);
+            public bool IsMB_CategoryNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MB_CategoryColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetPlot_CategoryNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.Plot_CategoryColumn] = global::System.Convert.DBNull;
+            public void SetMB_CategoryNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.MB_CategoryColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsPROJECTNAMENull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.PROJECTNAMEColumn);
+            public bool IsMB_ProjectNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MB_ProjectColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetPROJECTNAMENull() {
-                this[this.tableGetMaintenanceBillsWithDetails.PROJECTNAMEColumn] = global::System.Convert.DBNull;
+            public void SetMB_ProjectNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.MB_ProjectColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3606,7 +3606,7 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("MobileNo", "MobileNo");
             tableMapping.ColumnMappings.Add("City", "City");
             tableMapping.ColumnMappings.Add("Project", "Project");
-            tableMapping.ColumnMappings.Add("PhaseNumber", "PhaseNumber");
+            tableMapping.ColumnMappings.Add("PhaseName", "PhaseName");
             tableMapping.ColumnMappings.Add("Category", "Category");
             tableMapping.ColumnMappings.Add("Size", "Size");
             tableMapping.ColumnMappings.Add("Sector", "Sector");
@@ -3623,9 +3623,9 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("MB_History", "MB_History");
             tableMapping.ColumnMappings.Add("Plot_Number", "Plot_Number");
             tableMapping.ColumnMappings.Add("Street_Number", "Street_Number");
-            tableMapping.ColumnMappings.Add("Phase_Number", "Phase_Number");
-            tableMapping.ColumnMappings.Add("Plot_Category", "Plot_Category");
-            tableMapping.ColumnMappings.Add("PROJECTNAME", "PROJECTNAME");
+            tableMapping.ColumnMappings.Add("MB_PhaseName", "MB_PhaseName");
+            tableMapping.ColumnMappings.Add("MB_Category", "MB_Category");
+            tableMapping.ColumnMappings.Add("MB_Project", "MB_Project");
             tableMapping.ColumnMappings.Add("MB_PlotStatus", "MB_PlotStatus");
             tableMapping.ColumnMappings.Add("BillingMonth", "BillingMonth");
             tableMapping.ColumnMappings.Add("BillingYear", "BillingYear");
@@ -3683,7 +3683,7 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Project", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PhaseNumber", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PhaseName", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BillingMonth", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BillingYear", global::System.Data.SqlDbType.NVarChar, 4, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -3692,7 +3692,7 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BillDataSet.GetMaintenanceBillsWithDetailsDataTable dataTable, string Project, string PhaseNumber, string BillingMonth, string BillingYear) {
+        public virtual int Fill(BillDataSet.GetMaintenanceBillsWithDetailsDataTable dataTable, string Project, string PhaseName, string BillingMonth, string BillingYear) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Project == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -3700,11 +3700,11 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Project));
             }
-            if ((PhaseNumber == null)) {
+            if ((PhaseName == null)) {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PhaseNumber));
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PhaseName));
             }
             if ((BillingMonth == null)) {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -3729,7 +3729,7 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BillDataSet.GetMaintenanceBillsWithDetailsDataTable GetData(string Project, string PhaseNumber, string BillingMonth, string BillingYear) {
+        public virtual BillDataSet.GetMaintenanceBillsWithDetailsDataTable GetData(string Project, string PhaseName, string BillingMonth, string BillingYear) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Project == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -3737,11 +3737,11 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Project));
             }
-            if ((PhaseNumber == null)) {
+            if ((PhaseName == null)) {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PhaseNumber));
+                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PhaseName));
             }
             if ((BillingMonth == null)) {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;

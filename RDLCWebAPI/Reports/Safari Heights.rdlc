@@ -65,8 +65,8 @@
           <DataField>Project</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PhaseNumber">
-          <DataField>PhaseNumber</DataField>
+        <Field Name="PhaseName">
+          <DataField>PhaseName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Category">
@@ -133,16 +133,16 @@
           <DataField>Street_Number</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Phase_Number">
-          <DataField>Phase_Number</DataField>
+        <Field Name="MB_PhaseName">
+          <DataField>MB_PhaseName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Plot_Category">
-          <DataField>Plot_Category</DataField>
+        <Field Name="MB_Category">
+          <DataField>MB_Category</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PROJECTNAME">
-          <DataField>PROJECTNAME</DataField>
+        <Field Name="MB_Project">
+          <DataField>MB_Project</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="MB_PlotStatus">
@@ -1139,7 +1139,7 @@ Phase-1
                                                     <Value>=Split(Fields!CM_CustomerName.Value, vbCrLf).GetValue(0) &amp; vbCrLf &amp;
 "PLOT NO/HOUSE NO. " &amp; Fields!PloNo.Value &amp; " " &amp;
 "STREET. " &amp; Fields!StreetNumber.Value &amp; " " &amp;
-"PHASE. " &amp; Fields!PhaseNumber.Value</Value>
+"PHASE. " &amp; Fields!PhaseName.Value</Value>
                                                     <Style>
                                                       <FontSize>9pt</FontSize>
                                                     </Style>
@@ -1163,7 +1163,6 @@ Phase-1
                                             </Style>
                                           </Textbox>
                                           <ColSpan>3</ColSpan>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -3001,7 +3000,7 @@ Phase-1
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>BAHRIA SAFARI PROJECT - MAINTENANCE BILL </Value>
+                                                    <Value>BAHRIA SAFARI Project - MAINTENANCE BILL </Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontSize>12pt</FontSize>
@@ -3110,7 +3109,7 @@ Phase-1
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!PloNo.Value &amp; " / " &amp; Fields!StreetNumber.Value &amp; "/ " &amp; Fields!PhaseNumber.Value</Value>
+                                                    <Value>=Fields!PloNo.Value &amp; " / " &amp; Fields!StreetNumber.Value &amp; "/ " &amp; Fields!PhaseName.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontSize>9pt</FontSize>
@@ -3662,7 +3661,7 @@ Phase-1
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>BAHRIA SAFARI PROJECT - MAINTENANCE BILL </Value>
+                                                    <Value>BAHRIA SAFARI Project - MAINTENANCE BILL </Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontSize>12pt</FontSize>
@@ -3771,7 +3770,7 @@ Phase-1
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!PloNo.Value &amp; " / " &amp; Fields!StreetNumber.Value &amp; "/ " &amp; Fields!PhaseNumber.Value</Value>
+                                                    <Value>=Fields!PloNo.Value &amp; " / " &amp; Fields!StreetNumber.Value &amp; "/ " &amp; Fields!PhaseName.Value</Value>
                                                     <Style>
                                                       <FontSize>9pt</FontSize>
                                                     </Style>
@@ -3795,6 +3794,7 @@ Phase-1
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -4356,7 +4356,7 @@ Phase-1
       <AllowBlank>true</AllowBlank>
       <Prompt>Project</Prompt>
     </ReportParameter>
-    <ReportParameter Name="PhaseNumber">
+    <ReportParameter Name="PhaseName">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
       <Prompt>Phase Number</Prompt>
@@ -4385,7 +4385,7 @@ Phase-1
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>PhaseNumber</ParameterName>
+          <ParameterName>PhaseName</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>

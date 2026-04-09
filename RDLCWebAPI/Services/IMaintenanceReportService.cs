@@ -3,9 +3,9 @@
     public interface IMaintenanceReportService
     {
         Task<byte[]> GenerateReportAsync(
-            string reportType,  // Added report type parameter
+            string reportType,
             string project,
-            string phaseNumber,
+            string phaseName,
             string billingMonth,
             string billingYear);
     }
