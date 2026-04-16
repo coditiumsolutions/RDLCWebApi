@@ -44,6 +44,16 @@ namespace RDLCWebAPI.Controllers
             return await GenerateReportInternal("Safari-3", project, phaseName, billingMonth, billingYear);
         }
 
+        [HttpGet("BahriaSpring")]
+        public async Task<IActionResult> GenerateBahriaSpringReport(
+            [FromQuery] string? project = null,
+            [FromQuery] string? phaseName = null,
+            [FromQuery] string? billingMonth = null,
+            [FromQuery] string? billingYear = null)
+        {
+            return await GenerateReportInternal("BahriaSpring", project, phaseName, billingMonth, billingYear);
+        }
+
         [HttpGet("SafariHeights")]
         public async Task<IActionResult> GenerateSafariHeightsReport(
             [FromQuery] string? project = null,

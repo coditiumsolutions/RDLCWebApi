@@ -17,6 +17,7 @@ namespace RDLCWebAPI.Services
             { "Safari-1", "Safari - 1.rdlc" },
             { "Safari-2", "Safari - 2.rdlc" },
             { "Safari-3", "Safari - 3.rdlc" },
+            { "BahriaSpring", "Safari - 3.rdlc" },
             { "SafariHeights", "Safari Heights.rdlc" }
         };
 
