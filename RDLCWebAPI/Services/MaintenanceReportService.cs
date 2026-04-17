@@ -53,6 +53,7 @@ namespace RDLCWebAPI.Services
                 var bills = await _billRepository.GetMaintenanceBillsAsync(
                     string.IsNullOrEmpty(project) ? null : project,
                     string.IsNullOrEmpty(phaseName) ? null : phaseName,
+                    null,  // btNo
                     string.IsNullOrEmpty(billingMonth) ? null : billingMonth,
                     string.IsNullOrEmpty(billingYear) ? null : billingYear);
 
@@ -62,27 +63,17 @@ namespace RDLCWebAPI.Services
                 }
 
                 DataTable dt = CreateDataTable(bills);
-
-                // Debug: Print all column names
-                Console.WriteLine("=== DATATABLE COLUMNS ===");
-                foreach (DataColumn col in dt.Columns)
-                {
-                    Console.WriteLine($"Column: {col.ColumnName}");
-                }
-
                 string reportPath = FindReportFile(reportFileName);
-                Console.WriteLine($"Report path: {reportPath}");
 
                 using var fs = new FileStream(reportPath, FileMode.Open, FileAccess.Read);
                 using var report = new LocalReport();
                 report.LoadReportDefinition(fs);
                 report.DataSources.Add(new ReportDataSource("DataSet1", dt));
 
-                // ✅ FIXED: Parameter names match RDLC report
                 var parameters = new[]
                 {
-                    new ReportParameter("Project", project ?? ""),      // Changed from "Project"
-                    new ReportParameter("PhaseName", phaseName ?? ""),  // Changed from "PhaseNumber"
+                    new ReportParameter("Project", project ?? ""),
+                    new ReportParameter("PhaseName", phaseName ?? ""),
                     new ReportParameter("BillingMonth", billingMonth ?? ""),
                     new ReportParameter("BillingYear", billingYear ?? "")
                 };
@@ -100,6 +91,81 @@ namespace RDLCWebAPI.Services
                 {
                     Console.WriteLine($"INNER: {ex.InnerException.Message}");
                 }
+                throw;
+            }
+        }
+
+        public async Task<List<MaintenanceBillData>> GetBillsByParametersAsync(
+            string reportType,
+            string? project,
+            string? btNo,
+            string? billingMonth,
+            string? billingYear)
+        {
+            Console.WriteLine($"========== GET BILLS BY PARAMETERS ==========");
+            Console.WriteLine($"Project: {project}, BTNo: {btNo}, Month: {billingMonth}, Year: {billingYear}");
+
+            var bills = await _billRepository.GetMaintenanceBillsAsync(
+                string.IsNullOrEmpty(project) ? null : project,
+                null,  // phaseName - always null for single bill
+                string.IsNullOrEmpty(btNo) ? null : btNo,
+                string.IsNullOrEmpty(billingMonth) ? null : billingMonth,
+                string.IsNullOrEmpty(billingYear) ? null : billingYear);
+
+            Console.WriteLine($"Found {bills?.Count ?? 0} records");
+            return bills ?? new List<MaintenanceBillData>();
+        }
+
+        public async Task<byte[]> GenerateReportFromDataAsync(
+            string reportType,
+            List<MaintenanceBillData> bills,
+            string project,
+            string billingMonth,
+            string billingYear)
+        {
+            try
+            {
+                if (!_reportFiles.ContainsKey(reportType))
+                {
+                    throw new ArgumentException($"Invalid report type: {reportType}");
+                }
+
+                string reportFileName = _reportFiles[reportType];
+
+                Console.WriteLine($"========== GENERATE REPORT FROM DATA ==========");
+                Console.WriteLine($"Report File: {reportFileName}");
+                Console.WriteLine($"Records count: {bills.Count}");
+
+                if (bills == null || bills.Count == 0)
+                {
+                    throw new Exception("No data found");
+                }
+
+                DataTable dt = CreateDataTable(bills);
+                string reportPath = FindReportFile(reportFileName);
+
+                using var fs = new FileStream(reportPath, FileMode.Open, FileAccess.Read);
+                using var report = new LocalReport();
+                report.LoadReportDefinition(fs);
+                report.DataSources.Add(new ReportDataSource("DataSet1", dt));
+
+                var parameters = new[]
+                {
+                    new ReportParameter("Project", project ?? ""),
+                    new ReportParameter("PhaseName", ""),
+                    new ReportParameter("BillingMonth", billingMonth ?? ""),
+                    new ReportParameter("BillingYear", billingYear ?? "")
+                };
+                report.SetParameters(parameters);
+                Console.WriteLine("Parameters set successfully");
+
+                var renderedBytes = report.Render("PDF");
+                Console.WriteLine($"✅ Report generated: {renderedBytes.Length} bytes");
+                return renderedBytes;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"❌ ERROR: {ex.Message}");
                 throw;
             }
         }

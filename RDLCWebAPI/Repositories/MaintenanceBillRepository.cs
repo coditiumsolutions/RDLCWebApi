@@ -15,7 +15,11 @@ namespace RDLCWebAPI.Repositories
         }
 
         public async Task<List<MaintenanceBillData>> GetMaintenanceBillsAsync(
-            string? project, string? phaseName, string? billingMonth, string? billingYear)
+            string? project,
+            string? phaseName,
+            string? btNo,
+            string? billingMonth,
+            string? billingYear)
         {
             var bills = new List<MaintenanceBillData>();
 
@@ -29,6 +33,8 @@ namespace RDLCWebAPI.Repositories
                         string.IsNullOrEmpty(project) ? DBNull.Value : (object)project);
                     command.Parameters.AddWithValue("@PhaseName",
                         string.IsNullOrEmpty(phaseName) ? DBNull.Value : (object)phaseName);
+                    command.Parameters.AddWithValue("@BTNo",
+                        string.IsNullOrEmpty(btNo) ? DBNull.Value : (object)btNo);
                     command.Parameters.AddWithValue("@BillingMonth",
                         string.IsNullOrEmpty(billingMonth) ? DBNull.Value : (object)billingMonth);
                     command.Parameters.AddWithValue("@BillingYear",
@@ -109,8 +115,6 @@ namespace RDLCWebAPI.Repositories
                                 UpdateOn = GetNullableDateTime(reader, "UpdateOn"),
                                 PushedBy = GetString(reader, "PushedBy"),
                                 PushedOn = GetNullableDateTime(reader, "PushedOn"),
-
-                                // New Fields
                                 RentAmount = GetNullableInt32(reader, "RentAmount"),
                                 FoodSafety = GetNullableInt32(reader, "FoodSafety"),
                                 TrollyTrip = GetNullableInt32(reader, "TrollyTrip"),
@@ -128,6 +132,7 @@ namespace RDLCWebAPI.Repositories
             return bills;
         }
 
+        // Helper methods
         private string GetString(SqlDataReader reader, string columnName)
         {
             return reader[columnName] != DBNull.Value ? reader[columnName].ToString() : "";
