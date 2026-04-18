@@ -848,7 +848,7 @@
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>0.24479in</Height>
+                                    <Height>0.24739in</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -964,7 +964,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.38021in</Height>
+                                    <Height>0.61198in</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1046,9 +1046,13 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Bank ISLAMI 0037132410001</Value>
+                                                    <Value>HBL 
+2301-7900550403
+Bank ISLAMI
+0037132410001</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
+                                                      <FontSize>8pt</FontSize>
                                                       <FontWeight>Normal</FontWeight>
                                                       <TextDecoration>None</TextDecoration>
                                                       <Color>#000000</Color>
@@ -1069,7 +1073,6 @@
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
                                             </Style>
                                           </Textbox>
                                         </CellContents>
@@ -1077,7 +1080,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.25in</Height>
+                                    <Height>0.2526in</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1122,7 +1125,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.50417in</Height>
+                                    <Height>0.51719in</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1186,7 +1189,7 @@
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.94792in</Top>
                               <Left>0.00125in</Left>
-                              <Height>1.37917in</Height>
+                              <Height>1.62917in</Height>
                               <Width>4.37501in</Width>
                               <ZIndex>1</ZIndex>
                               <Style>
@@ -1204,7 +1207,7 @@
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>1.37917in</Height>
+                                    <Height>1.62917in</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1254,7 +1257,7 @@
                               </TablixRowHierarchy>
                               <Top>0.94792in</Top>
                               <Left>4.37626in</Left>
-                              <Height>1.37917in</Height>
+                              <Height>1.62917in</Height>
                               <Width>2.89374in</Width>
                               <ZIndex>2</ZIndex>
                               <Style>
@@ -2035,7 +2038,7 @@
                                 </Textbox>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>2.32709in</Top>
+                              <Top>2.57709in</Top>
                               <Left>0.00125in</Left>
                               <Height>3.17166in</Height>
                               <Width>4.375in</Width>
@@ -2692,7 +2695,7 @@
                                 </Tablix>
                               </ReportItems>
                               <KeepTogether>true</KeepTogether>
-                              <Top>2.32709in</Top>
+                              <Top>2.57709in</Top>
                               <Left>4.37625in</Left>
                               <Height>3.17166in</Height>
                               <Width>2.89375in</Width>
@@ -3696,7 +3699,6 @@
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -4167,7 +4169,7 @@
                                 </TablixMembers>
                               </TablixRowHierarchy>
                               <DataSetName>DataSet1</DataSetName>
-                              <Top>5.49875in</Top>
+                              <Top>5.74875in</Top>
                               <Height>4.71873in</Height>
                               <Width>7.26999in</Width>
                               <ZIndex>5</ZIndex>
