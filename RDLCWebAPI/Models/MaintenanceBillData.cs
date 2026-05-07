@@ -4,7 +4,7 @@ namespace RDLCWebAPI.Models
 {
     public class MaintenanceBillData
     {
-        // CustomersMaintenance fields
+        // ========== CustomersMaintenance Table Fields ==========
         public int CM_uid { get; set; }
         public string? CM_KuickPayNo { get; set; }
         public string? CM_CustomerName { get; set; }
@@ -17,18 +17,29 @@ namespace RDLCWebAPI.Models
         public string? MobileNo { get; set; }
         public string? City { get; set; }
         public string? Project { get; set; }
-        public string? PhaseName { get; set; }
+        public string? PhaseName { get; set; }           // ← CHANGE: PhaseName se Phase
         public string? Category { get; set; }
         public string? Size { get; set; }
         public string? Sector { get; set; }
-        public string? PloNo { get; set; }
+        public string? PlotNo { get; set; }          // ← CHANGE: PloNo se PlotNo
         public string? BillGenerationStatus { get; set; }
         public string? ConnectionStatus { get; set; }
         public string? CM_PlotStatus { get; set; }
-        public string? StreetNumber { get; set; }
+        public string? StreetNo { get; set; }        // ← CHANGE: StreetNumber se StreetNo
         public string? UnitType { get; set; }
 
-        // MaintenanceBills fields
+        // Extra charges from CustomersMaintenance
+        public double? Maint { get; set; }
+        public double? Misc { get; set; }
+        public double? Water { get; set; }
+        public double? Rent { get; set; }
+        public double? Generator { get; set; }
+        public double? Other { get; set; }
+        public double? foodsafety { get; set; }
+        public double? trollytrip { get; set; }
+        public double? extrawork { get; set; }
+
+        // ========== MaintenanceBills Table Fields (as per your schema) ==========
         public int MB_uid { get; set; }
         public string? MB_KuickPayNo { get; set; }
         public string? MB_CustomerName { get; set; }
@@ -36,9 +47,9 @@ namespace RDLCWebAPI.Models
         public string? MB_History { get; set; }
         public string? Plot_Number { get; set; }
         public string? Street_Number { get; set; }
-        public string? MB_PhaseName { get; set; }    // ✅ Instead of PhaseName1
-        public string? MB_Category { get; set; }     // ✅ Instead of Category1
-        public string? MB_Project { get; set; }      // ✅ Instead of Project1
+        public string? MB_PhaseName { get; set; }        // ← CHANGE: MB_PhaseName se MB_Phase
+        public string? MB_Category { get; set; }
+        public string? MB_Project { get; set; }
         public string? MB_PlotStatus { get; set; }
         public string? BillingMonth { get; set; }
         public string? BillingYear { get; set; }
@@ -70,12 +81,5 @@ namespace RDLCWebAPI.Models
         public DateTime? UpdateOn { get; set; }
         public string? PushedBy { get; set; }
         public DateTime? PushedOn { get; set; }
-
-        // New Fields
-        public int? RentAmount { get; set; }
-        public int? FoodSafety { get; set; }
-        public int? TrollyTrip { get; set; }
-        public int? ExtraWork { get; set; }
-        public int? DieselCost { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace RDLCWebAPI.Repositories
 
         public async Task<List<MaintenanceBillData>> GetMaintenanceBillsAsync(
             string? project,
-            string? phaseName,
+            string? phase,
             string? btNo,
             string? billingMonth,
             string? billingYear)
@@ -32,7 +32,7 @@ namespace RDLCWebAPI.Repositories
                     command.Parameters.AddWithValue("@Project",
                         string.IsNullOrEmpty(project) ? DBNull.Value : (object)project);
                     command.Parameters.AddWithValue("@PhaseName",
-                        string.IsNullOrEmpty(phaseName) ? DBNull.Value : (object)phaseName);
+                        string.IsNullOrEmpty(phase) ? DBNull.Value : (object)phase);
                     command.Parameters.AddWithValue("@BTNo",
                         string.IsNullOrEmpty(btNo) ? DBNull.Value : (object)btNo);
                     command.Parameters.AddWithValue("@BillingMonth",
@@ -41,7 +41,6 @@ namespace RDLCWebAPI.Repositories
                         string.IsNullOrEmpty(billingYear) ? DBNull.Value : (object)billingYear);
 
                     await connection.OpenAsync();
-                    Console.WriteLine("Database connected successfully");
 
                     using (var reader = await command.ExecuteReaderAsync())
                     {
@@ -49,7 +48,7 @@ namespace RDLCWebAPI.Repositories
                         {
                             var bill = new MaintenanceBillData
                             {
-                                // CustomersMaintenance fields
+                                // ========== CustomersMaintenance Fields (column names as per table) ==========
                                 CM_uid = GetInt32(reader, "CM_uid"),
                                 CM_KuickPayNo = GetString(reader, "CM_KuickPayNo"),
                                 CM_CustomerName = GetString(reader, "CM_CustomerName"),
@@ -62,18 +61,29 @@ namespace RDLCWebAPI.Repositories
                                 MobileNo = GetString(reader, "MobileNo"),
                                 City = GetString(reader, "City"),
                                 Project = GetString(reader, "Project"),
-                                PhaseName = GetString(reader, "PhaseName"),
+                                PhaseName = GetString(reader, "PhaseName"),                    // ← PhaseName se Phase
                                 Category = GetString(reader, "Category"),
                                 Size = GetString(reader, "Size"),
                                 Sector = GetString(reader, "Sector"),
-                                PloNo = GetString(reader, "PloNo"),
+                                PlotNo = GetString(reader, "PlotNo"),                  // ← PloNo se PlotNo
                                 BillGenerationStatus = GetString(reader, "BillGenerationStatus"),
                                 ConnectionStatus = GetString(reader, "ConnectionStatus"),
                                 CM_PlotStatus = GetString(reader, "CM_PlotStatus"),
-                                StreetNumber = GetString(reader, "StreetNumber"),
+                                StreetNo = GetString(reader, "StreetNo"),              // ← StreetNumber se StreetNo
                                 UnitType = GetString(reader, "UnitType"),
 
-                                // MaintenanceBills fields
+                                // Extra charges
+                                Maint = GetNullableDouble(reader, "Maint"),
+                                Misc = GetNullableDouble(reader, "Misc"),
+                                Water = GetNullableDouble(reader, "Water"),
+                                Rent = GetNullableDouble(reader, "Rent"),
+                                Generator = GetNullableDouble(reader, "Generator"),
+                                Other = GetNullableDouble(reader, "Other"),
+                                foodsafety = GetNullableDouble(reader, "foodsafety"),
+                                trollytrip = GetNullableDouble(reader, "trollytrip"),
+                                extrawork = GetNullableDouble(reader, "extrawork"),
+
+                                // ========== MaintenanceBills Fields ==========
                                 MB_uid = GetInt32(reader, "MB_uid"),
                                 MB_KuickPayNo = GetString(reader, "MB_KuickPayNo"),
                                 MB_CustomerName = GetString(reader, "MB_CustomerName"),
@@ -81,7 +91,7 @@ namespace RDLCWebAPI.Repositories
                                 MB_History = GetString(reader, "MB_History"),
                                 Plot_Number = GetString(reader, "Plot_Number"),
                                 Street_Number = GetString(reader, "Street_Number"),
-                                MB_PhaseName = GetString(reader, "MB_PhaseName"),
+                                MB_PhaseName = GetString(reader, "MB_PhaseName"),              // ← MB_PhaseName se MB_Phase
                                 MB_Category = GetString(reader, "MB_Category"),
                                 MB_Project = GetString(reader, "MB_Project"),
                                 MB_PlotStatus = GetString(reader, "MB_PlotStatus"),
@@ -114,12 +124,7 @@ namespace RDLCWebAPI.Repositories
                                 UpdateBy = GetString(reader, "UpdateBy"),
                                 UpdateOn = GetNullableDateTime(reader, "UpdateOn"),
                                 PushedBy = GetString(reader, "PushedBy"),
-                                PushedOn = GetNullableDateTime(reader, "PushedOn"),
-                                RentAmount = GetNullableInt32(reader, "RentAmount"),
-                                FoodSafety = GetNullableInt32(reader, "FoodSafety"),
-                                TrollyTrip = GetNullableInt32(reader, "TrollyTrip"),
-                                ExtraWork = GetNullableInt32(reader, "ExtraWork"),
-                                DieselCost = GetNullableInt32(reader, "DieselCost")
+                                PushedOn = GetNullableDateTime(reader, "PushedOn")
                             };
 
                             bills.Add(bill);
@@ -128,11 +133,10 @@ namespace RDLCWebAPI.Repositories
                 }
             }
 
-            Console.WriteLine($"Repository returning {bills.Count} records");
             return bills;
         }
 
-        // Helper methods
+        // Helper methods (same as before)
         private string GetString(SqlDataReader reader, string columnName)
         {
             return reader[columnName] != DBNull.Value ? reader[columnName].ToString() : "";
@@ -146,6 +150,11 @@ namespace RDLCWebAPI.Repositories
         private int? GetNullableInt32(SqlDataReader reader, string columnName)
         {
             return reader[columnName] != DBNull.Value ? Convert.ToInt32(reader[columnName]) : (int?)null;
+        }
+
+        private double? GetNullableDouble(SqlDataReader reader, string columnName)
+        {
+            return reader[columnName] != DBNull.Value ? Convert.ToDouble(reader[columnName]) : (double?)null;
         }
 
         private DateTime? GetNullableDateTime(SqlDataReader reader, string columnName)

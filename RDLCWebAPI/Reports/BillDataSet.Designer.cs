@@ -313,7 +313,7 @@ namespace RDLCWebAPI.Reports {
             
             private global::System.Data.DataColumn columnSector;
             
-            private global::System.Data.DataColumn columnPloNo;
+            private global::System.Data.DataColumn columnPlotNo;
             
             private global::System.Data.DataColumn columnBillGenerationStatus;
             
@@ -321,9 +321,27 @@ namespace RDLCWebAPI.Reports {
             
             private global::System.Data.DataColumn columnCM_PlotStatus;
             
-            private global::System.Data.DataColumn columnStreetNumber;
+            private global::System.Data.DataColumn columnStreetNo;
             
             private global::System.Data.DataColumn columnUnitType;
+            
+            private global::System.Data.DataColumn columnMaint;
+            
+            private global::System.Data.DataColumn columnMisc;
+            
+            private global::System.Data.DataColumn columnWater;
+            
+            private global::System.Data.DataColumn columnRent;
+            
+            private global::System.Data.DataColumn columnGenerator;
+            
+            private global::System.Data.DataColumn columnOther;
+            
+            private global::System.Data.DataColumn columnfoodsafety;
+            
+            private global::System.Data.DataColumn columntrollytrip;
+            
+            private global::System.Data.DataColumn columnextrawork;
             
             private global::System.Data.DataColumn columnMB_uid;
             
@@ -409,11 +427,11 @@ namespace RDLCWebAPI.Reports {
             
             private global::System.Data.DataColumn columnRentAmount;
             
-            private global::System.Data.DataColumn columnFoodSafety;
+            private global::System.Data.DataColumn columnFoodSafety1;
             
-            private global::System.Data.DataColumn columnTrollyTrip;
+            private global::System.Data.DataColumn columnTrollyTrip1;
             
-            private global::System.Data.DataColumn columnExtraWork;
+            private global::System.Data.DataColumn columnExtraWork1;
             
             private global::System.Data.DataColumn columnDieselCost;
             
@@ -582,9 +600,9 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PloNoColumn {
+            public global::System.Data.DataColumn PlotNoColumn {
                 get {
-                    return this.columnPloNo;
+                    return this.columnPlotNo;
                 }
             }
             
@@ -614,9 +632,9 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn StreetNumberColumn {
+            public global::System.Data.DataColumn StreetNoColumn {
                 get {
-                    return this.columnStreetNumber;
+                    return this.columnStreetNo;
                 }
             }
             
@@ -625,6 +643,78 @@ namespace RDLCWebAPI.Reports {
             public global::System.Data.DataColumn UnitTypeColumn {
                 get {
                     return this.columnUnitType;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MaintColumn {
+                get {
+                    return this.columnMaint;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn MiscColumn {
+                get {
+                    return this.columnMisc;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn WaterColumn {
+                get {
+                    return this.columnWater;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn RentColumn {
+                get {
+                    return this.columnRent;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn GeneratorColumn {
+                get {
+                    return this.columnGenerator;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn OtherColumn {
+                get {
+                    return this.columnOther;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn foodsafetyColumn {
+                get {
+                    return this.columnfoodsafety;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn trollytripColumn {
+                get {
+                    return this.columntrollytrip;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn extraworkColumn {
+                get {
+                    return this.columnextrawork;
                 }
             }
             
@@ -966,25 +1056,25 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn FoodSafetyColumn {
+            public global::System.Data.DataColumn FoodSafety1Column {
                 get {
-                    return this.columnFoodSafety;
+                    return this.columnFoodSafety1;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TrollyTripColumn {
+            public global::System.Data.DataColumn TrollyTrip1Column {
                 get {
-                    return this.columnTrollyTrip;
+                    return this.columnTrollyTrip1;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ExtraWorkColumn {
+            public global::System.Data.DataColumn ExtraWork1Column {
                 get {
-                    return this.columnExtraWork;
+                    return this.columnExtraWork1;
                 }
             }
             
@@ -1049,12 +1139,21 @@ namespace RDLCWebAPI.Reports {
                         string Category, 
                         string Size, 
                         string Sector, 
-                        string PloNo, 
+                        string PlotNo, 
                         string BillGenerationStatus, 
                         string ConnectionStatus, 
                         string CM_PlotStatus, 
-                        string StreetNumber, 
+                        string StreetNo, 
                         string UnitType, 
+                        double Maint, 
+                        double Misc, 
+                        double Water, 
+                        double Rent, 
+                        double Generator, 
+                        double Other, 
+                        double foodsafety, 
+                        double trollytrip, 
+                        double extrawork, 
                         string MB_KuickPayNo, 
                         string MB_CustomerName, 
                         string MB_BTNo, 
@@ -1096,9 +1195,9 @@ namespace RDLCWebAPI.Reports {
                         string PushedBy, 
                         System.DateTime PushedOn, 
                         int RentAmount, 
-                        int FoodSafety, 
-                        int TrollyTrip, 
-                        int ExtraWork, 
+                        int FoodSafety1, 
+                        int TrollyTrip1, 
+                        int ExtraWork1, 
                         int DieselCost) {
                 GetMaintenanceBillsWithDetailsRow rowGetMaintenanceBillsWithDetailsRow = ((GetMaintenanceBillsWithDetailsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
@@ -1118,12 +1217,21 @@ namespace RDLCWebAPI.Reports {
                         Category,
                         Size,
                         Sector,
-                        PloNo,
+                        PlotNo,
                         BillGenerationStatus,
                         ConnectionStatus,
                         CM_PlotStatus,
-                        StreetNumber,
+                        StreetNo,
                         UnitType,
+                        Maint,
+                        Misc,
+                        Water,
+                        Rent,
+                        Generator,
+                        Other,
+                        foodsafety,
+                        trollytrip,
+                        extrawork,
                         null,
                         MB_KuickPayNo,
                         MB_CustomerName,
@@ -1166,9 +1274,9 @@ namespace RDLCWebAPI.Reports {
                         PushedBy,
                         PushedOn,
                         RentAmount,
-                        FoodSafety,
-                        TrollyTrip,
-                        ExtraWork,
+                        FoodSafety1,
+                        TrollyTrip1,
+                        ExtraWork1,
                         DieselCost};
                 rowGetMaintenanceBillsWithDetailsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowGetMaintenanceBillsWithDetailsRow);
@@ -1216,12 +1324,21 @@ namespace RDLCWebAPI.Reports {
                 this.columnCategory = base.Columns["Category"];
                 this.columnSize = base.Columns["Size"];
                 this.columnSector = base.Columns["Sector"];
-                this.columnPloNo = base.Columns["PloNo"];
+                this.columnPlotNo = base.Columns["PlotNo"];
                 this.columnBillGenerationStatus = base.Columns["BillGenerationStatus"];
                 this.columnConnectionStatus = base.Columns["ConnectionStatus"];
                 this.columnCM_PlotStatus = base.Columns["CM_PlotStatus"];
-                this.columnStreetNumber = base.Columns["StreetNumber"];
+                this.columnStreetNo = base.Columns["StreetNo"];
                 this.columnUnitType = base.Columns["UnitType"];
+                this.columnMaint = base.Columns["Maint"];
+                this.columnMisc = base.Columns["Misc"];
+                this.columnWater = base.Columns["Water"];
+                this.columnRent = base.Columns["Rent"];
+                this.columnGenerator = base.Columns["Generator"];
+                this.columnOther = base.Columns["Other"];
+                this.columnfoodsafety = base.Columns["foodsafety"];
+                this.columntrollytrip = base.Columns["trollytrip"];
+                this.columnextrawork = base.Columns["extrawork"];
                 this.columnMB_uid = base.Columns["MB_uid"];
                 this.columnMB_KuickPayNo = base.Columns["MB_KuickPayNo"];
                 this.columnMB_CustomerName = base.Columns["MB_CustomerName"];
@@ -1264,9 +1381,9 @@ namespace RDLCWebAPI.Reports {
                 this.columnPushedBy = base.Columns["PushedBy"];
                 this.columnPushedOn = base.Columns["PushedOn"];
                 this.columnRentAmount = base.Columns["RentAmount"];
-                this.columnFoodSafety = base.Columns["FoodSafety"];
-                this.columnTrollyTrip = base.Columns["TrollyTrip"];
-                this.columnExtraWork = base.Columns["ExtraWork"];
+                this.columnFoodSafety1 = base.Columns["FoodSafety1"];
+                this.columnTrollyTrip1 = base.Columns["TrollyTrip1"];
+                this.columnExtraWork1 = base.Columns["ExtraWork1"];
                 this.columnDieselCost = base.Columns["DieselCost"];
             }
             
@@ -1305,18 +1422,36 @@ namespace RDLCWebAPI.Reports {
                 base.Columns.Add(this.columnSize);
                 this.columnSector = new global::System.Data.DataColumn("Sector", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSector);
-                this.columnPloNo = new global::System.Data.DataColumn("PloNo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPloNo);
+                this.columnPlotNo = new global::System.Data.DataColumn("PlotNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlotNo);
                 this.columnBillGenerationStatus = new global::System.Data.DataColumn("BillGenerationStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBillGenerationStatus);
                 this.columnConnectionStatus = new global::System.Data.DataColumn("ConnectionStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnConnectionStatus);
                 this.columnCM_PlotStatus = new global::System.Data.DataColumn("CM_PlotStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCM_PlotStatus);
-                this.columnStreetNumber = new global::System.Data.DataColumn("StreetNumber", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStreetNumber);
+                this.columnStreetNo = new global::System.Data.DataColumn("StreetNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStreetNo);
                 this.columnUnitType = new global::System.Data.DataColumn("UnitType", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUnitType);
+                this.columnMaint = new global::System.Data.DataColumn("Maint", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaint);
+                this.columnMisc = new global::System.Data.DataColumn("Misc", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMisc);
+                this.columnWater = new global::System.Data.DataColumn("Water", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWater);
+                this.columnRent = new global::System.Data.DataColumn("Rent", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRent);
+                this.columnGenerator = new global::System.Data.DataColumn("Generator", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGenerator);
+                this.columnOther = new global::System.Data.DataColumn("Other", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOther);
+                this.columnfoodsafety = new global::System.Data.DataColumn("foodsafety", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfoodsafety);
+                this.columntrollytrip = new global::System.Data.DataColumn("trollytrip", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntrollytrip);
+                this.columnextrawork = new global::System.Data.DataColumn("extrawork", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnextrawork);
                 this.columnMB_uid = new global::System.Data.DataColumn("MB_uid", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMB_uid);
                 this.columnMB_KuickPayNo = new global::System.Data.DataColumn("MB_KuickPayNo", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1401,12 +1536,12 @@ namespace RDLCWebAPI.Reports {
                 base.Columns.Add(this.columnPushedOn);
                 this.columnRentAmount = new global::System.Data.DataColumn("RentAmount", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnRentAmount);
-                this.columnFoodSafety = new global::System.Data.DataColumn("FoodSafety", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFoodSafety);
-                this.columnTrollyTrip = new global::System.Data.DataColumn("TrollyTrip", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTrollyTrip);
-                this.columnExtraWork = new global::System.Data.DataColumn("ExtraWork", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnExtraWork);
+                this.columnFoodSafety1 = new global::System.Data.DataColumn("FoodSafety1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFoodSafety1);
+                this.columnTrollyTrip1 = new global::System.Data.DataColumn("TrollyTrip1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTrollyTrip1);
+                this.columnExtraWork1 = new global::System.Data.DataColumn("ExtraWork1", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnExtraWork1);
                 this.columnDieselCost = new global::System.Data.DataColumn("DieselCost", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDieselCost);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -1417,32 +1552,26 @@ namespace RDLCWebAPI.Reports {
                 this.columnCM_uid.AutoIncrementStep = -1;
                 this.columnCM_uid.AllowDBNull = false;
                 this.columnCM_uid.ReadOnly = true;
-                this.columnCM_KuickPayNo.AllowDBNull = false;
-                this.columnCM_KuickPayNo.MaxLength = 20;
+                this.columnCM_KuickPayNo.MaxLength = 50;
                 this.columnCM_CustomerName.MaxLength = 200;
-                this.columnCM_BTNo.MaxLength = 20;
+                this.columnCM_BTNo.MaxLength = 50;
                 this.columnCM_History.MaxLength = 2147483647;
                 this.columnGeneratedMonthYear.MaxLength = 50;
                 this.columnLocationSeqNo.MaxLength = 50;
                 this.columnCNICNo.MaxLength = 50;
-                this.columnFatherName.MaxLength = 70;
+                this.columnFatherName.MaxLength = 100;
                 this.columnMobileNo.MaxLength = 50;
                 this.columnCity.MaxLength = 50;
-                this.columnProject.AllowDBNull = false;
-                this.columnProject.MaxLength = 50;
-                this.columnPhaseName.AllowDBNull = false;
-                this.columnPhaseName.MaxLength = 50;
-                this.columnCategory.AllowDBNull = false;
+                this.columnProject.MaxLength = 100;
+                this.columnPhaseName.MaxLength = 100;
                 this.columnCategory.MaxLength = 100;
                 this.columnSize.MaxLength = 50;
-                this.columnSector.AllowDBNull = false;
                 this.columnSector.MaxLength = 100;
-                this.columnPloNo.AllowDBNull = false;
-                this.columnPloNo.MaxLength = 100;
+                this.columnPlotNo.MaxLength = 100;
                 this.columnBillGenerationStatus.MaxLength = 50;
-                this.columnConnectionStatus.MaxLength = 20;
-                this.columnCM_PlotStatus.MaxLength = 50;
-                this.columnStreetNumber.MaxLength = 50;
+                this.columnConnectionStatus.MaxLength = 50;
+                this.columnCM_PlotStatus.MaxLength = 100;
+                this.columnStreetNo.MaxLength = 50;
                 this.columnUnitType.MaxLength = 50;
                 this.columnMB_uid.AutoIncrement = true;
                 this.columnMB_uid.AutoIncrementSeed = -1;
@@ -1623,7 +1752,13 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string CM_KuickPayNo {
                 get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.CM_KuickPayNoColumn]));
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.CM_KuickPayNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CM_KuickPayNo\' in table \'GetMaintenanceBillsWithDetails\' is" +
+                                " DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.CM_KuickPayNoColumn] = value;
@@ -1786,7 +1921,13 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string Project {
                 get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.ProjectColumn]));
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.ProjectColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Project\' in table \'GetMaintenanceBillsWithDetails\' is DBNul" +
+                                "l.", e);
+                    }
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.ProjectColumn] = value;
@@ -1797,7 +1938,13 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string PhaseName {
                 get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PhaseNameColumn]));
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PhaseNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PhaseName\' in table \'GetMaintenanceBillsWithDetails\' is DBN" +
+                                "ull.", e);
+                    }
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.PhaseNameColumn] = value;
@@ -1808,7 +1955,13 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string Category {
                 get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.CategoryColumn]));
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.CategoryColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Category\' in table \'GetMaintenanceBillsWithDetails\' is DBNu" +
+                                "ll.", e);
+                    }
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.CategoryColumn] = value;
@@ -1835,7 +1988,13 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string Sector {
                 get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.SectorColumn]));
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.SectorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Sector\' in table \'GetMaintenanceBillsWithDetails\' is DBNull" +
+                                ".", e);
+                    }
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.SectorColumn] = value;
@@ -1844,12 +2003,18 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string PloNo {
+            public string PlotNo {
                 get {
-                    return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PloNoColumn]));
+                    try {
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.PlotNoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PlotNo\' in table \'GetMaintenanceBillsWithDetails\' is DBNull" +
+                                ".", e);
+                    }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.PloNoColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.PlotNoColumn] = value;
                 }
             }
             
@@ -1906,18 +2071,18 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string StreetNumber {
+            public string StreetNo {
                 get {
                     try {
-                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.StreetNumberColumn]));
+                        return ((string)(this[this.tableGetMaintenanceBillsWithDetails.StreetNoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'StreetNumber\' in table \'GetMaintenanceBillsWithDetails\' is " +
-                                "DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'StreetNo\' in table \'GetMaintenanceBillsWithDetails\' is DBNu" +
+                                "ll.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.StreetNumberColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.StreetNoColumn] = value;
                 }
             }
             
@@ -1935,6 +2100,157 @@ namespace RDLCWebAPI.Reports {
                 }
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.UnitTypeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double Maint {
+                get {
+                    try {
+                        return ((double)(this[this.tableGetMaintenanceBillsWithDetails.MaintColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Maint\' in table \'GetMaintenanceBillsWithDetails\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.MaintColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double Misc {
+                get {
+                    try {
+                        return ((double)(this[this.tableGetMaintenanceBillsWithDetails.MiscColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Misc\' in table \'GetMaintenanceBillsWithDetails\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.MiscColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double Water {
+                get {
+                    try {
+                        return ((double)(this[this.tableGetMaintenanceBillsWithDetails.WaterColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Water\' in table \'GetMaintenanceBillsWithDetails\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.WaterColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double Rent {
+                get {
+                    try {
+                        return ((double)(this[this.tableGetMaintenanceBillsWithDetails.RentColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Rent\' in table \'GetMaintenanceBillsWithDetails\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.RentColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double Generator {
+                get {
+                    try {
+                        return ((double)(this[this.tableGetMaintenanceBillsWithDetails.GeneratorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Generator\' in table \'GetMaintenanceBillsWithDetails\' is DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.GeneratorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double Other {
+                get {
+                    try {
+                        return ((double)(this[this.tableGetMaintenanceBillsWithDetails.OtherColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Other\' in table \'GetMaintenanceBillsWithDetails\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.OtherColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double foodsafety {
+                get {
+                    try {
+                        return ((double)(this[this.tableGetMaintenanceBillsWithDetails.foodsafetyColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'foodsafety\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.foodsafetyColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double trollytrip {
+                get {
+                    try {
+                        return ((double)(this[this.tableGetMaintenanceBillsWithDetails.trollytripColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'trollytrip\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.trollytripColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public double extrawork {
+                get {
+                    try {
+                        return ((double)(this[this.tableGetMaintenanceBillsWithDetails.extraworkColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'extrawork\' in table \'GetMaintenanceBillsWithDetails\' is DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tableGetMaintenanceBillsWithDetails.extraworkColumn] = value;
                 }
             }
             
@@ -2648,52 +2964,52 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int FoodSafety {
+            public int FoodSafety1 {
                 get {
                     try {
-                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.FoodSafetyColumn]));
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.FoodSafety1Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FoodSafety\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
-                                "Null.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'FoodSafety1\' in table \'GetMaintenanceBillsWithDetails\' is D" +
+                                "BNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.FoodSafetyColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.FoodSafety1Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int TrollyTrip {
+            public int TrollyTrip1 {
                 get {
                     try {
-                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.TrollyTripColumn]));
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.TrollyTrip1Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TrollyTrip\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
-                                "Null.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TrollyTrip1\' in table \'GetMaintenanceBillsWithDetails\' is D" +
+                                "BNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.TrollyTripColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.TrollyTrip1Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int ExtraWork {
+            public int ExtraWork1 {
                 get {
                     try {
-                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.ExtraWorkColumn]));
+                        return ((int)(this[this.tableGetMaintenanceBillsWithDetails.ExtraWork1Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ExtraWork\' in table \'GetMaintenanceBillsWithDetails\' is DBN" +
-                                "ull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ExtraWork1\' in table \'GetMaintenanceBillsWithDetails\' is DB" +
+                                "Null.", e);
                     }
                 }
                 set {
-                    this[this.tableGetMaintenanceBillsWithDetails.ExtraWorkColumn] = value;
+                    this[this.tableGetMaintenanceBillsWithDetails.ExtraWork1Column] = value;
                 }
             }
             
@@ -2712,6 +3028,18 @@ namespace RDLCWebAPI.Reports {
                 set {
                     this[this.tableGetMaintenanceBillsWithDetails.DieselCostColumn] = value;
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCM_KuickPayNoNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.CM_KuickPayNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCM_KuickPayNoNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.CM_KuickPayNoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2824,6 +3152,42 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsProjectNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.ProjectColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetProjectNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.ProjectColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPhaseNameNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.PhaseNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPhaseNameNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.PhaseNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsCategoryNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.CategoryColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetCategoryNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.CategoryColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsSizeNull() {
                 return this.IsNull(this.tableGetMaintenanceBillsWithDetails.SizeColumn);
             }
@@ -2832,6 +3196,30 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetSizeNull() {
                 this[this.tableGetMaintenanceBillsWithDetails.SizeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSectorNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.SectorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSectorNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.SectorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPlotNoNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.PlotNoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPlotNoNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.PlotNoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2872,14 +3260,14 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsStreetNumberNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.StreetNumberColumn);
+            public bool IsStreetNoNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.StreetNoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetStreetNumberNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.StreetNumberColumn] = global::System.Convert.DBNull;
+            public void SetStreetNoNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.StreetNoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2892,6 +3280,114 @@ namespace RDLCWebAPI.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetUnitTypeNull() {
                 this[this.tableGetMaintenanceBillsWithDetails.UnitTypeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMaintNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MaintColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMaintNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.MaintColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsMiscNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.MiscColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetMiscNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.MiscColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsWaterNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.WaterColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetWaterNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.WaterColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsRentNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.RentColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetRentNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.RentColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsGeneratorNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.GeneratorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetGeneratorNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.GeneratorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsOtherNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.OtherColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetOtherNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.OtherColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsfoodsafetyNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.foodsafetyColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetfoodsafetyNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.foodsafetyColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IstrollytripNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.trollytripColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SettrollytripNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.trollytripColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsextraworkNull() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.extraworkColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetextraworkNull() {
+                this[this.tableGetMaintenanceBillsWithDetails.extraworkColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3388,38 +3884,38 @@ namespace RDLCWebAPI.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsFoodSafetyNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.FoodSafetyColumn);
+            public bool IsFoodSafety1Null() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.FoodSafety1Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetFoodSafetyNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.FoodSafetyColumn] = global::System.Convert.DBNull;
+            public void SetFoodSafety1Null() {
+                this[this.tableGetMaintenanceBillsWithDetails.FoodSafety1Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTrollyTripNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.TrollyTripColumn);
+            public bool IsTrollyTrip1Null() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.TrollyTrip1Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTrollyTripNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.TrollyTripColumn] = global::System.Convert.DBNull;
+            public void SetTrollyTrip1Null() {
+                this[this.tableGetMaintenanceBillsWithDetails.TrollyTrip1Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsExtraWorkNull() {
-                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.ExtraWorkColumn);
+            public bool IsExtraWork1Null() {
+                return this.IsNull(this.tableGetMaintenanceBillsWithDetails.ExtraWork1Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetExtraWorkNull() {
-                this[this.tableGetMaintenanceBillsWithDetails.ExtraWorkColumn] = global::System.Convert.DBNull;
+            public void SetExtraWork1Null() {
+                this[this.tableGetMaintenanceBillsWithDetails.ExtraWork1Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3610,12 +4106,21 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("Category", "Category");
             tableMapping.ColumnMappings.Add("Size", "Size");
             tableMapping.ColumnMappings.Add("Sector", "Sector");
-            tableMapping.ColumnMappings.Add("PloNo", "PloNo");
+            tableMapping.ColumnMappings.Add("PlotNo", "PlotNo");
             tableMapping.ColumnMappings.Add("BillGenerationStatus", "BillGenerationStatus");
             tableMapping.ColumnMappings.Add("ConnectionStatus", "ConnectionStatus");
             tableMapping.ColumnMappings.Add("CM_PlotStatus", "CM_PlotStatus");
-            tableMapping.ColumnMappings.Add("StreetNumber", "StreetNumber");
+            tableMapping.ColumnMappings.Add("StreetNo", "StreetNo");
             tableMapping.ColumnMappings.Add("UnitType", "UnitType");
+            tableMapping.ColumnMappings.Add("Maint", "Maint");
+            tableMapping.ColumnMappings.Add("Misc", "Misc");
+            tableMapping.ColumnMappings.Add("Water", "Water");
+            tableMapping.ColumnMappings.Add("Rent", "Rent");
+            tableMapping.ColumnMappings.Add("Generator", "Generator");
+            tableMapping.ColumnMappings.Add("Other", "Other");
+            tableMapping.ColumnMappings.Add("foodsafety", "foodsafety");
+            tableMapping.ColumnMappings.Add("trollytrip", "trollytrip");
+            tableMapping.ColumnMappings.Add("extrawork", "extrawork");
             tableMapping.ColumnMappings.Add("MB_uid", "MB_uid");
             tableMapping.ColumnMappings.Add("MB_KuickPayNo", "MB_KuickPayNo");
             tableMapping.ColumnMappings.Add("MB_CustomerName", "MB_CustomerName");
@@ -3658,9 +4163,9 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("PushedBy", "PushedBy");
             tableMapping.ColumnMappings.Add("PushedOn", "PushedOn");
             tableMapping.ColumnMappings.Add("RentAmount", "RentAmount");
-            tableMapping.ColumnMappings.Add("FoodSafety", "FoodSafety");
-            tableMapping.ColumnMappings.Add("TrollyTrip", "TrollyTrip");
-            tableMapping.ColumnMappings.Add("ExtraWork", "ExtraWork");
+            tableMapping.ColumnMappings.Add("FoodSafety1", "FoodSafety1");
+            tableMapping.ColumnMappings.Add("TrollyTrip1", "TrollyTrip1");
+            tableMapping.ColumnMappings.Add("ExtraWork1", "ExtraWork1");
             tableMapping.ColumnMappings.Add("DieselCost", "DieselCost");
             this._adapter.TableMappings.Add(tableMapping);
         }
@@ -3682,8 +4187,9 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             this._commandCollection[0].CommandText = "dbo.GetMaintenanceBillsWithDetails";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Project", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Project", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PhaseName", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BTNo", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BillingMonth", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BillingYear", global::System.Data.SqlDbType.NVarChar, 4, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -3692,7 +4198,7 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(BillDataSet.GetMaintenanceBillsWithDetailsDataTable dataTable, string Project, string PhaseName, string BillingMonth, string BillingYear) {
+        public virtual int Fill(BillDataSet.GetMaintenanceBillsWithDetailsDataTable dataTable, string Project, string PhaseName, string BTNo, string BillingMonth, string BillingYear) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Project == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -3706,17 +4212,23 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PhaseName));
             }
-            if ((BillingMonth == null)) {
+            if ((BTNo == null)) {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(BillingMonth));
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(BTNo));
             }
-            if ((BillingYear == null)) {
+            if ((BillingMonth == null)) {
                 this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(BillingYear));
+                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(BillingMonth));
+            }
+            if ((BillingYear == null)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((string)(BillingYear));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -3729,7 +4241,7 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual BillDataSet.GetMaintenanceBillsWithDetailsDataTable GetData(string Project, string PhaseName, string BillingMonth, string BillingYear) {
+        public virtual BillDataSet.GetMaintenanceBillsWithDetailsDataTable GetData(string Project, string PhaseName, string BTNo, string BillingMonth, string BillingYear) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Project == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -3743,17 +4255,23 @@ namespace RDLCWebAPI.Reports.BillDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(PhaseName));
             }
-            if ((BillingMonth == null)) {
+            if ((BTNo == null)) {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(BillingMonth));
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(BTNo));
             }
-            if ((BillingYear == null)) {
+            if ((BillingMonth == null)) {
                 this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(BillingYear));
+                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(BillingMonth));
+            }
+            if ((BillingYear == null)) {
+                this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[5].Value = ((string)(BillingYear));
             }
             BillDataSet.GetMaintenanceBillsWithDetailsDataTable dataTable = new BillDataSet.GetMaintenanceBillsWithDetailsDataTable();
             this.Adapter.Fill(dataTable);

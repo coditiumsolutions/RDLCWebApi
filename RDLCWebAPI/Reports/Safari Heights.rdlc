@@ -81,8 +81,8 @@
           <DataField>Sector</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PloNo">
-          <DataField>PloNo</DataField>
+        <Field Name="PlotNo">
+          <DataField>PlotNo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="BillGenerationStatus">
@@ -97,13 +97,49 @@
           <DataField>CM_PlotStatus</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="StreetNumber">
-          <DataField>StreetNumber</DataField>
+        <Field Name="StreetNo">
+          <DataField>StreetNo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="UnitType">
           <DataField>UnitType</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Maint">
+          <DataField>Maint</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Misc">
+          <DataField>Misc</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Water">
+          <DataField>Water</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Rent">
+          <DataField>Rent</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Generator">
+          <DataField>Generator</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Other">
+          <DataField>Other</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="foodsafety">
+          <DataField>foodsafety</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="trollytrip">
+          <DataField>trollytrip</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="extrawork">
+          <DataField>extrawork</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
         <Field Name="MB_uid">
           <DataField>MB_uid</DataField>
@@ -273,16 +309,16 @@
           <DataField>RentAmount</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="FoodSafety">
-          <DataField>FoodSafety</DataField>
+        <Field Name="FoodSafety1">
+          <DataField>FoodSafety1</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="TrollyTrip">
-          <DataField>TrollyTrip</DataField>
+        <Field Name="TrollyTrip1">
+          <DataField>TrollyTrip1</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="ExtraWork">
-          <DataField>ExtraWork</DataField>
+        <Field Name="ExtraWork1">
+          <DataField>ExtraWork1</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="DieselCost">
@@ -292,7 +328,7 @@
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>BillDataSet</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\Software-Qasim\Desktop\RDLCWebAPI\RDLCWebAPI\Reports\BillDataSet.xsd</rd:SchemaPath>
+        <rd:SchemaPath>C:\Users\Software-Qasim\Desktop\RDLCWebAPI_UpdatedFields\RDLCWebAPI\Reports\BillDataSet.xsd</rd:SchemaPath>
         <rd:TableName>GetMaintenanceBillsWithDetails</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
@@ -1137,8 +1173,8 @@ Phase-1
                                                 <TextRuns>
                                                   <TextRun>
                                                     <Value>=Split(Fields!CM_CustomerName.Value, vbCrLf).GetValue(0) &amp; vbCrLf &amp;
-"PLOT NO/HOUSE NO. " &amp; Fields!PloNo.Value &amp; " " &amp;
-"STREET. " &amp; Fields!StreetNumber.Value &amp; " " &amp;
+"PLOT NO/HOUSE NO. " &amp; Fields!PlotNo.Value &amp; " " &amp;
+"STREET. " &amp; Fields!StreetNo.Value &amp; " " &amp;
 "PHASE. " &amp; Fields!PhaseName.Value</Value>
                                                     <Style>
                                                       <FontSize>9pt</FontSize>
@@ -1770,7 +1806,7 @@ Phase-1
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Sum(Fields!ExtraWork.Value)</Value>
+                                                        <Value>=Sum(Fields!extrawork.Value)</Value>
                                                         <Style>
                                                           <FontSize>8pt</FontSize>
                                                         </Style>
@@ -1942,6 +1978,7 @@ Phase-1
                                                   <PaddingBottom>2pt</PaddingBottom>
                                                 </Style>
                                               </Textbox>
+                                              <rd:Selected>true</rd:Selected>
                                             </CellContents>
                                           </TablixCell>
                                         </TablixCells>
@@ -3109,7 +3146,7 @@ Phase-1
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!PloNo.Value &amp; " / " &amp; Fields!StreetNumber.Value &amp; "/ " &amp; Fields!PhaseName.Value</Value>
+                                                    <Value>=Fields!PlotNo.Value &amp; " / " &amp; Fields!StreetNo.Value &amp; "/ " &amp; Fields!PhaseName.Value</Value>
                                                     <Style>
                                                       <FontStyle>Normal</FontStyle>
                                                       <FontSize>9pt</FontSize>
@@ -3770,7 +3807,7 @@ Phase-1
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!PloNo.Value &amp; " / " &amp; Fields!StreetNumber.Value &amp; "/ " &amp; Fields!PhaseName.Value</Value>
+                                                    <Value>=Fields!PlotNo.Value &amp; " / " &amp; Fields!StreetNo.Value &amp; "/ " &amp; Fields!PhaseName.Value</Value>
                                                     <Style>
                                                       <FontSize>9pt</FontSize>
                                                     </Style>
@@ -3794,7 +3831,6 @@ Phase-1
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
